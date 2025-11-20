@@ -28,6 +28,7 @@
       </div>
 
       <nav class="nav-links">
+        <a href="#examples">Examples</a>
         <a href="#features">Features</a>
         <a href="#devexp">Developer Experience</a>
         <a href="https://github.com/xpell-ai" target="_blank" rel="noreferrer">GitHub</a>
@@ -75,6 +76,44 @@
       
     </main>
 
+    <!-- EXAMPLES -->
+    <section id="examples" class="section">
+      <h2 class="section-title">Examples</h2>
+      <p class="section-subtitle">
+        Quick demos built with Xpell components. Explore the flows and remix them for your own apps.
+      </p>
+
+      <div class="features-grid">
+        <article class="feature-card">
+          <div class="feature-tag">
+            <span class="dot"></span><span>Xpell-UI</span>
+          </div>
+          <h3 class="feature-title">Tik-Tak-Toe (UI)</h3>
+          <p class="feature-body">
+            Classic grid game rendered via declarative XView. Uses Wormholes to sync moves between
+            players and keep game state consistent in real time.
+          </p>
+          <p class="feature-body" style="margin-top: 8px;">
+            <a class="btn btn-ghost" href="examples/ttt.html">Open example page →</a>
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-tag">
+            <span class="dot"></span><span>Xpell-3D</span>
+          </div>
+          <h3 class="feature-title">DynaSphere Audio Visualizator</h3>
+          <p class="feature-body">
+            3D audio-reactive experience that streams waveform data over Wormholes and renders a
+            dynamic sphere scene with Xpell-3D primitives.
+          </p>
+          <p class="feature-body" style="margin-top: 8px;">
+            <a class="btn btn-ghost" href="examples/dynasphere.html">Open example page →</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
     <!-- FEATURES -->
     <section id="features" class="section">
       <h2 class="section-title">Core building blocks</h2>
@@ -95,11 +134,10 @@
           </p>
           <pre class="code-block">
 <span class="code-comment">// Module example</span>
-export default defineXpellModule({
-  routes: {
-    "/products": ({ xdb }) =&gt; xdb.list("Product")
-  }
-});</pre>
+export default class Users extends XModule {
+  ...
+}
+  </pre>
         </article>
 
         <article class="feature-card">
@@ -112,7 +150,7 @@ export default defineXpellModule({
             data. Keep server and UI in sync without manual polling or REST boilerplate.
           </p>
           <pre class="code-block">
-wormholes.call("Products:/products").then(data =&gt; {
+wormholes.send("Products:/products").then(data =&gt; {
   ui.render("productsList", data);
 });</pre>
         </article>
@@ -191,7 +229,7 @@ https://github.com/xpell-ai</pre>
         ·
         <a href="https://xpell.ai" target="_blank" rel="noreferrer">Website</a>
         ·
-        <span>Discord coming soon</span>
+        <a href="https://discord.gg/cQU79ge3Dx" target="_blank" rel="noreferrer">Discord</a>
       </div>
     </footer>
   </div>

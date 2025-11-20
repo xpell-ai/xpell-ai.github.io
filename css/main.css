@@ -218,7 +218,7 @@
 
     .hero-card {
       width: 100%;
-      max-width: 420px;
+      /* max-width: 420px; */
       background: radial-gradient(circle at top left, #111827, #020617);
       border-radius: var(--radius-xl);
       border: 1px solid rgba(148,163,184,0.4);
@@ -434,4 +434,145 @@
 
     footer a {
       color: #9ca3ff;
+    }
+
+    /* EXAMPLE PAGE: Tic-Tac-Toe */
+    .ttt-body {
+      background: radial-gradient(circle at top, #0f172a, #060915 55%, #020617 100%);
+    }
+
+    .ttt-page {
+      width: 80%;
+      max-width: 1200px;
+      padding-top: 28px;
+    }
+
+    .ttt-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      font-size: 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(148,163,184,0.4);
+      background: rgba(15,23,42,0.9);
+      color: #cbd5e1;
+    }
+
+    .pill .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: linear-gradient(120deg, #22c55e, #4c7fff);
+      box-shadow: 0 0 10px rgba(76,127,255,0.6);
+    }
+
+    .link-row {
+      display: flex;
+      gap: 12px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn-inline {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(148,163,184,0.5);
+      background: rgba(15,23,42,0.9);
+      color: var(--text);
+      font-size: 13px;
+      transition: all 0.12s ease-out;
+    }
+
+    .btn-inline:hover {
+      border-color: var(--accent);
+      color: #e5e7eb;
+    }
+
+    .example-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .ttt-media {
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: linear-gradient(150deg, rgba(76,127,255,0.12), rgba(139,92,246,0.12));
+      min-height: 260px;
+      display: grid;
+      place-items: center;
+      color: #e5e7eb;
+      text-align: center;
+    }
+
+    .ttt-media::after {
+      content: "Screenshot placeholder";
+      font-size: 13px;
+      color: var(--muted);
+      letter-spacing: 0.4px;
+    }
+
+    .back-link {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .back-link:hover {
+      color: var(--text);
+      text-decoration: underline;
+    }
+
+    /* EXAMPLE PAGE: DynaSphere Audio Visualizator */
+    .dyn-body {
+      background: radial-gradient(circle at 20% 0, #13223d, #070b1d 55%, #030510 100%);
+    }
+
+    .dyn-page {
+      width: 80%;
+      max-width: 1200px;
+      padding-top: 28px;
+    }
+
+    .dyn-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .dyn-media {
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: radial-gradient(circle at 30% 30%, rgba(76,127,255,0.18), transparent 55%),
+                  radial-gradient(circle at 80% 10%, rgba(16,185,129,0.16), transparent 60%),
+                  #0a0f1f;
+      min-height: 260px;
+      display: grid;
+      place-items: center;
+      color: #e5e7eb;
+      text-align: center;
+    }
+
+    .dyn-media::after {
+      content: "Screenshot / video placeholder";
+      font-size: 13px;
+      color: var(--muted);
+      letter-spacing: 0.4px;
     }
