@@ -4,106 +4,240 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Xpell.ai – AI-Native App Framework</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background: #0f1117;
-      color: #ffffff;
-      text-align: center;
-    }
-    header {
-      padding: 80px 20px 40px;
-    }
-    h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-    h2 {
-      font-weight: normal;
-      color: #b8b8b8;
-      margin-bottom: 40px;
-    }
-    a.button {
-      display: inline-block;
-      padding: 12px 24px;
-      margin: 10px;
-      border-radius: 6px;
-      text-decoration: none;
-      background: #4c7fff;
-      color: white;
-      font-weight: bold;
-      transition: background 0.2s ease;
-    }
-    a.button:hover {
-      background: #2f5fe0;
-    }
-    section {
-      max-width: 900px;
-      margin: 60px auto;
-      padding: 0 20px;
-      text-align: left;
-      line-height: 1.6;
-    }
-    footer {
-      opacity: 0.6;
-      margin: 40px 0;
-      font-size: 14px;
-    }
-    img.logo {
-      border-radius: 12px;
-      width: 120px;
-      margin-bottom: 20px;
-    }
-  </style>
+  <meta
+    name="description"
+    content="Xpell is an open-source full-stack framework for AI-native applications, combining Xpell Server, Wormholes, Xpell-UI, and Vibe Coding."
+  />
+  <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
+  <div class="page">
+    <!-- NAVBAR -->
+    <header class="nav">
+      <div class="nav-left">
+        <div class="logo">
+          <img
+            src="https://avatars.githubusercontent.com/u/245213194?s=200&v=4"
+            alt="Xpell.ai logo"
+          />
+        </div>
+        <div class="brand-text">
+          <strong>Xpell.ai</strong>
+          <span>AI-native app framework</span>
+        </div>
+      </div>
 
-<header>
-  <img class="logo" src="https://avatars.githubusercontent.com/u/245213194?s=200&v=4" alt="Xpell.ai Logo">
-  <h1>Xpell.ai</h1>
-  <h2>The Full-Stack Framework for AI-Native Applications</h2>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#devexp">Developer Experience</a>
+        <a href="https://github.com/xpell-ai" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://discord.gg/" target="_blank" rel="noreferrer">Discord</a>
+      </nav>
+    </header>
 
-  <a class="button" href="https://github.com/xpell-ai">GitHub</a>
-  <a class="button" href="#">Docs (coming soon)</a>
-</header>
+    <!-- HERO -->
+    <main class="hero">
+      <section class="hero-left">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          <span>Open source · Early access</span>
+        </div>
 
-<section>
-  <h2>🚀 What is Xpell?</h2>
-  <p>
-    Xpell is an open-source full-stack framework for building AI-driven applications,
-    dashboards, and agent interfaces using:
-  </p>
-  <ul>
-    <li><strong>Xpell Server</strong> — real-time backend runtime</li>
-    <li><strong>Wormholes</strong> — ultra-fast server↔client live communication</li>
-    <li><strong>Xpell-UI (XView)</strong> — declarative JSON-based UI engine</li>
-    <li><strong>Vibe Coding</strong> — prompt → instant UI generation</li>
-  </ul>
+        <h1 class="hero-title">
+          Full-stack framework for<br />
+          <span class="accent">AI-native, vibe-coded apps.</span>
+        </h1>
 
-  <p>
-    Xpell makes it possible to create modern applications and AI agents that can
-    generate, update, and interact with their own UI in real time.
-  </p>
-</section>
+        <p class="hero-subtitle">
+          Xpell combines a real-time server, Wormholes protocol, and declarative JSON UI so
+          humans and AI agents can build and update applications together.
+        </p>
 
-<section>
-  <h2>📦 Repositories</h2>
-  <p>Explore the Xpell ecosystem on GitHub:</p>
-  <ul>
-    <li>Xpell Server (coming soon)</li>
-    <li>Wormholes Protocol</li>
-    <li>Xpell-UI / XView Engine</li>
-    <li>Vibe Coding</li>
-    <li>Examples & Starter Kits</li>
-  </ul>
-</section>
+        <div class="hero-actions">
+          <a
+            class="btn btn-primary"
+            href="https://github.com/xpell-ai"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View on GitHub →
+          </a>
+          <a class="btn btn-ghost" href="#devexp">
+            Getting started (concept)
+          </a>
+        </div>
 
-<footer>
-  © 2025 Xpell.ai — Aime Technologies Ltd.
-</footer>
+        <p class="hero-note">
+          Built by Aime Technologies · Designed for dashboards, agents, and internal tools.
+        </p>
+      </section>
 
+      <section class="hero-right">
+        <div class="hero-card">
+          <div class="hero-card-inner">
+            <div class="card-header">
+              <div class="card-pill">
+                <span class="pill-dot"></span>
+                <span>Live Xpell runtime</span>
+              </div>
+              <span>Server · Wormholes · UI</span>
+            </div>
+
+            <div class="diagram">
+              <div class="diagram-node">
+                <div class="diagram-node-badge">server</div>
+                <div class="diagram-node-title">Xpell Server</div>
+                <div class="diagram-node-label">Entities, modules, AI logic.</div>
+              </div>
+              <div class="diagram-node">
+                <div class="diagram-node-badge">realtime</div>
+                <div class="diagram-node-title">Wormholes</div>
+                <div class="diagram-node-label">Low-latency data &amp; events.</div>
+              </div>
+              <div class="diagram-node">
+                <div class="diagram-node-badge">ui</div>
+                <div class="diagram-node-title">Xpell-UI</div>
+                <div class="diagram-node-label">XView JSON → live UI.</div>
+              </div>
+            </div>
+
+            <pre class="code-block">
+<span class="code-comment">// Prompt → XView → Render</span>
+vibeCoding.generateView("product dashboard").then(xview =&gt; {
+  wormholes.send("ui.loadView", xview);
+});</pre>
+
+            <div class="card-footer">
+              <span>Mode: <strong>AI-assisted</strong></span>
+              <span class="pill-mini">
+                <span class="tiny-dot"></span>
+                <span>Experimental · OSS</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FEATURES -->
+    <section id="features" class="section">
+      <h2 class="section-title">Core building blocks</h2>
+      <p class="section-subtitle">
+        Xpell is a full-stack runtime where server logic, transport, and UI are designed to be
+        AI-friendly from day one.
+      </p>
+
+      <div class="features-grid">
+        <article class="feature-card">
+          <div class="feature-tag">
+            <span class="dot"></span><span>Backend</span>
+          </div>
+          <h3 class="feature-title">Xpell Server</h3>
+          <p class="feature-body">
+            Real-time server runtime with entities, modules, and operations. Define business
+            logic once, expose it to UI and agents through a simple contract.
+          </p>
+          <pre class="code-block">
+<span class="code-comment">// Module example</span>
+export default defineXpellModule({
+  routes: {
+    "/products": ({ xdb }) =&gt; xdb.list("Product")
+  }
+});</pre>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-tag">
+            <span class="dot"></span><span>Transport</span>
+          </div>
+          <h3 class="feature-title">Wormholes</h3>
+          <p class="feature-body">
+            A thin, opinionated layer on top of WebSockets for RPC-style communication and live
+            data. Keep server and UI in sync without manual polling or REST boilerplate.
+          </p>
+          <pre class="code-block">
+wormholes.call("Products:/products").then(data =&gt; {
+  ui.render("productsList", data);
+});</pre>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-tag">
+            <span class="dot"></span><span>UI Layer</span>
+          </div>
+          <h3 class="feature-title">Xpell-UI &amp; XView</h3>
+          <p class="feature-body">
+            Declarative JSON format for UI. Easy to generate with LLMs, easy to diff, and safe
+            to interpret at runtime — perfect for vibe coding and agent-driven experiences.
+          </p>
+          <pre class="code-block">
+{
+  "_type": "XView",
+  "_data_source": "Products:/products",
+  "_children": [
+    { "_type": "XList", "_bind": "items" }
+  ]
+}</pre>
+        </article>
+      </div>
+    </section>
+
+    <!-- DEV EXPERIENCE -->
+    <section id="devexp" class="section">
+      <h2 class="section-title">Developer experience (planned)</h2>
+      <p class="section-subtitle">
+        The goal is to feel as familiar as tools like Next.js or Vite, but with AI and
+        real-time capabilities baked into the core.
+      </p>
+
+      <div class="features-grid">
+        <article class="feature-card">
+          <h3 class="feature-title">Create an app in seconds</h3>
+          <p class="feature-body">
+            A single command bootstraps server, UI shell, and Wormholes configuration.
+          </p>
+          <pre class="code-block">
+npx create-xpell-app my-app
+cd my-app
+npm run dev</pre>
+        </article>
+
+        <article class="feature-card">
+          <h3 class="feature-title">Vibe-coding workflow</h3>
+          <p class="feature-body">
+            Describe the screen you need in natural language, let the AI generate XView JSON,
+            then refine manually or via prompts.
+          </p>
+          <pre class="code-block">
+"Dashboard with KPIs, table, and filters"
+  ⇢ XView
+  ⇢ Live UI via Xpell-UI</pre>
+        </article>
+
+        <article class="feature-card">
+          <h3 class="feature-title">Open-source core</h3>
+          <p class="feature-body">
+            Xpell core is planned to be open-sourced under MIT license, with advanced AI and GPU
+            features provided by the AIME platform for production workloads.
+          </p>
+          <pre class="code-block">
+<span class="code-comment">// GitHub org</span>
+https://github.com/xpell-ai</pre>
+        </article>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div>© 2025 Aime Technologies Ltd. · Xpell.ai</div>
+      <div class="footer-links">
+        <a href="https://github.com/xpell-ai" target="_blank" rel="noreferrer">GitHub</a>
+        ·
+        <a href="https://xpell.ai" target="_blank" rel="noreferrer">Website</a>
+        ·
+        <span>Discord coming soon</span>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
-
