@@ -571,7 +571,7 @@
     }
 
     .dyn-media::after {
-      content: "Screenshot / video placeholder";
+      content: "Screenshot";
       font-size: 13px;
       color: var(--muted);
       letter-spacing: 0.4px;
