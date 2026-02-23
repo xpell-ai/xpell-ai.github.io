@@ -4,30 +4,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Xpell — Real-time UI, 3D & AI Framework</title>
-  <meta name="description" content="Xpell is a real-time UI and AI application framework for JavaScript/TypeScript — combining real-time UI (XUI), 3D (X3D), AI agents, and Wormholes. Build dashboards, apps, and interactive experiences.">
+  <title>Xpell 2 Alpha | AI-native Runtime Architecture</title>
+  <meta name="description" content="Xpell 2 Alpha is a runtime-first, AI-native architecture for vibe coding with modular packages: core, node, ui, and 3d." />
+  <link rel="canonical" href="https://xpell.ai/" />
   <link rel="stylesheet" href="css/main.css" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "Xpell",
-  "alternateName": "Xpell II",
+  "alternateName": "Xpell 2",
   "url": "https://xpell.ai",
   "image": "https://xpell.ai/icon-512.png",
-  "description": "Xpell is a real-time UI, 3D, and AI application framework for JavaScript and TypeScript. It combines a high-FPS UI engine (XUI), integrated 3D engine (X3D), AI and LLM agents, and real-time server sync via Wormholes to build interactive dashboards, 3D apps, games, and AI-driven interfaces.",
+  "description": "Xpell 2 Alpha is an AI-native runtime architecture for building real-time UI, 3D, and server-connected systems with deterministic contracts.",
   "applicationCategory": "DeveloperApplication",
-  "softwareVersion": "2.0.0-alpha.0",
+  "softwareVersion": "2.0.0-alpha",
   "operatingSystem": "Any",
   "author": {
     "@type": "Organization",
     "name": "Aime Technologies",
-    "url": "https://aime.technology"
+    "url": "https://aimeverse.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Aime Technologies",
-    "url": "https://aime.technology"
+    "url": "https://aimeverse.com"
   },
   "creator": {
     "@type": "Person",
@@ -38,32 +39,26 @@
   "offers": {
     "@type": "Offer",
     "price": "0",
-    "priceCurrency": "USD",
-    "category": "Open Source"
+    "priceCurrency": "USD"
   },
   "downloadUrl": "https://www.npmjs.com/package/xpell",
   "sameAs": [
     "https://github.com/xpell-ai",
-    "https://www.npmjs.com/package/xpell",
-    "https://www.linkedin.com/search/results/all/?keywords=Xpell",
-    "https://www.youtube.com/results?search_query=Xpell"
+    "https://www.npmjs.com/package/xpell"
   ]
 }
 </script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L4Z7FD82N7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-L4Z7FD82N7');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4Z7FD82N7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-L4Z7FD82N7');
+  </script>
 </head>
 
 <body>
   <div class="page">
-    <!-- NAVBAR -->
     <header class="nav">
       <div class="nav-left">
         <div class="logo">
@@ -71,60 +66,135 @@
         </div>
         <div class="brand-text">
           <strong>Xpell.ai</strong>
-          <span>AI-native app framework</span>
+          <span>AI-native runtime architecture</span>
         </div>
       </div>
 
       <nav class="nav-links">
-        <a href="#examples">Examples</a>
-        <a href="#features">Features</a>
-        <a href="#devexp">Developer Experience</a>
-        <a href="https://github.com/xpell-ai" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://discord.gg/cQU79ge3Dx" target="_blank" rel="noreferrer">Discord</a>
+        <a href="index.html">Home</a>
+        <a href="xpell-2-alpha/">Alpha</a>
+        <a href="examples/">Examples</a>
+        <a href="#getting-started">Getting Started</a>
+        <a href="https://github.com/xpell-ai" target="_blank" rel="noreferrer" data-analytics="download" data-item="github">Download</a>
       </nav>
     </header>
 
-    <!-- HERO -->
-    <main class="hero">
-      <section class="hero-left">
-        <div class="badge">
-          <span class="badge-dot"></span>
-          <span>Open source · Early access</span>
-        </div>
-
-        <h1 class="hero-title">
-          Full-stack framework for<br />
-          <span class="accent">AI-native, vibe-coded apps.</span>
-        </h1>
-
-        <p class="hero-subtitle">
-          Xpell combines a real-time server, Wormholes protocol, and declarative JSON UI so
-          humans and AI agents can build and update applications together.
-        </p>
-
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="https://github.com/xpell-ai" target="_blank" rel="noreferrer">
-            View on GitHub →
-          </a>
-          <a class="btn btn-ghost" href="#devexp">
-            Getting started (concept)
-          </a>
-        </div>
-
-        <p class="hero-note">
-          Built by Aime Technologies · Designed for dashboards, agents, and internal tools.
-        </p>
+    <main>
+      <section class="release-banner" aria-label="Xpell 2 Alpha release">
+        New: Xpell 2 Alpha — AI-native architecture for vibe coding. <a href="xpell-2-alpha/">Read the announcement →</a>
       </section>
 
+      <section class="hero">
+        <section class="hero-left">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            <span>Open source · Alpha</span>
+          </div>
 
+          <h1 class="hero-title">
+            Xpell 2 Alpha<br />
+            <span class="accent">Runtime-first collaboration for AI and developers.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Build with a running system, not a rebuild loop. Xpell keeps server, UI, and runtime state connected so AI can collaborate with live contracts instead of prompt-only code generation.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#getting-started">Docs / Getting Started</a>
+            <a class="btn btn-ghost" href="examples/" data-analytics="example" data-item="examples-home">Examples</a>
+            <a class="btn btn-ghost" href="https://github.com/xpell-ai" target="_blank" rel="noreferrer" data-analytics="download" data-item="github">Download / GitHub</a>
+          </div>
+
+          <p class="hero-note">Created by Aime Technologies. Vibe Coding is supported now; the VIBE UX layer comes later.</p>
+        </section>
+      </section>
+
+      <section class="cta-row" aria-label="Developer calls to action">
+        <a class="cta-card" href="#getting-started">
+          <strong>Docs / Getting Started</strong>
+          <span>Install packages, review contracts, and start with a runtime-first workflow.</span>
+        </a>
+        <a class="cta-card" href="examples/" data-analytics="example" data-item="examples-index">
+          <strong>Examples</strong>
+          <span>Use curated examples to understand the architecture and extend it quickly.</span>
+        </a>
+        <a class="cta-card" href="https://github.com/xpell-ai" target="_blank" rel="noreferrer" data-analytics="download" data-item="github">
+          <strong>Download / GitHub</strong>
+          <span>Clone, inspect, and run Xpell 2 Alpha directly from the source.</span>
+        </a>
+      </section>
     </main>
 
-    <!-- EXAMPLES -->
+    <section id="ai-native-architecture" class="section">
+      <h2 class="section-title">AI-native architecture</h2>
+      <p class="section-subtitle">
+        Xpell is built for runtime collaboration. Instead of generating files and hoping they run, AI and developers work against a live execution model with deterministic contracts.
+      </p>
+      <ul class="feature-list">
+        <li><strong>Runtime-first workflow:</strong> evolve UI and state without a rebuild loop for every iteration.</li>
+        <li><strong>Contracted behavior:</strong> data and commands stay structured for safe automation.</li>
+        <li><strong>Live collaboration:</strong> AI can inspect and update running systems, not only static prompts.</li>
+      </ul>
+    </section>
+
+    <section id="packages" class="section">
+      <h2 class="section-title">Xpell 2 packages</h2>
+      <p class="section-subtitle">A modular hierarchy for runtime development and AI collaboration.</p>
+
+      <div class="features-grid">
+        <article class="feature-card">
+          <h3 class="feature-title">@xpell/core</h3>
+          <ul class="feature-list">
+            <li>XData 2 and Nano-Commands 2 contracts</li>
+            <li>XEM, XModule, and XObject foundations</li>
+          </ul>
+        </article>
+
+        <article class="feature-card">
+          <h3 class="feature-title">@xpell/node (xnode)</h3>
+          <ul class="feature-list">
+            <li>Server execution layer with Wormholes 2</li>
+            <li>Deterministic transport and XDB-backed state</li>
+          </ul>
+        </article>
+
+        <article class="feature-card">
+          <h3 class="feature-title">@xpell/ui</h3>
+          <ul class="feature-list">
+            <li>XUI and XUIObject runtime views</li>
+            <li>JSON-first UI contracts with client Wormholes</li>
+          </ul>
+        </article>
+
+        <article class="feature-card">
+          <h3 class="feature-title">@xpell/3d</h3>
+          <ul class="feature-list">
+            <li>Three.js-based spatial runtime layer</li>
+            <li>Encapsulated 3D mutations through contracts</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="getting-started" class="section">
+      <h2 class="section-title">Docs / Getting Started</h2>
+      <p class="section-subtitle">
+        Xpell 2 is in Alpha. APIs and contracts are evolving, so pin versions and expect iterative updates.
+      </p>
+      <pre class="code-block">npm i @xpell/core @xpell/node @xpell/ui @xpell/3d
+# optional: npm i xpell</pre>
+      <div class="section-links">
+        <a class="btn btn-ghost" href="examples/" data-analytics="example" data-item="examples-getting-started">Browse examples</a>
+        <a class="btn btn-ghost" href="https://github.com/xpell-ai" target="_blank" rel="noreferrer" data-analytics="download" data-item="github">Download from GitHub</a>
+        <a class="btn btn-ghost" href="https://www.npmjs.com/package/xpell" target="_blank" rel="noreferrer" data-analytics="download" data-item="npm">Install via npm</a>
+      </div>
+      <p class="hero-note" style="margin-top: 12px;">Codex skill installer integration: coming soon.</p>
+    </section>
+
     <section id="examples" class="section">
       <h2 class="section-title">Examples</h2>
-      <p class="section-subtitle">
-        Quick demos built with Xpell components. Explore the flows and remix them for your own apps.
-      </p>
+      <p class="section-subtitle">Curated alpha examples to explore end-to-end runtime behavior.</p>
 
       <div class="features-grid">
         <article class="feature-card">
@@ -132,12 +202,9 @@
             <span class="dot"></span><span>Xpell-UI</span>
           </div>
           <h3 class="feature-title">Tik-Tak-Toe (UI)</h3>
-          <p class="feature-body">
-            Classic grid game rendered via declarative XView. Uses Wormholes to sync moves between
-            players and keep game state consistent in real time.
-          </p>
+          <p class="feature-body">Declarative XUI + live state updates using Wormholes contracts.</p>
           <p class="feature-body" style="margin-top: 8px;">
-            <a class="btn btn-ghost" href="examples/ttt.html">Open example page →</a>
+            <a class="btn btn-ghost" href="examples/ttt.html" data-analytics="example" data-item="ttt-overview">Open example page →</a>
           </p>
         </article>
 
@@ -146,136 +213,26 @@
             <span class="dot"></span><span>Xpell-3D</span>
           </div>
           <h3 class="feature-title">DynaSphere Audio Visualizator</h3>
-          <p class="feature-body">
-            3D audio-reactive experience that streams waveform data over Wormholes and renders a
-            dynamic sphere scene with Xpell-3D primitives.
-          </p>
+          <p class="feature-body">3D scene updates driven by live audio data with Xpell-3D primitives.</p>
           <p class="feature-body" style="margin-top: 8px;">
-            <a class="btn btn-ghost" href="examples/dynasphere.html">Open example page →</a>
+            <a class="btn btn-ghost" href="examples/dynasphere.html" data-analytics="example" data-item="dynasphere-overview">Open example page →</a>
           </p>
         </article>
       </div>
     </section>
 
-    <!-- FEATURES -->
-    <section id="features" class="section">
-      <h2 class="section-title">Core building blocks</h2>
-      <p class="section-subtitle">
-        Xpell is a full-stack runtime where server logic, transport, and UI are designed to be
-        AI-friendly from day one.
-      </p>
-
-      <div class="features-grid">
-        <article class="feature-card">
-          <div class="feature-tag">
-            <span class="dot"></span><span>Backend</span>
-          </div>
-          <h3 class="feature-title">Xpell Server</h3>
-          <p class="feature-body">
-            Real-time server runtime with entities, modules, and operations. Define business
-            logic once, expose it to UI and agents through a simple contract.
-          </p>
-          <pre class="code-block">
-<span class="code-comment">// Module example</span>
-export default class Users extends XModule {
-  ...
-}
-  </pre>
-        </article>
-
-        <article class="feature-card">
-          <div class="feature-tag">
-            <span class="dot"></span><span>Transport</span>
-          </div>
-          <h3 class="feature-title">Wormholes</h3>
-          <p class="feature-body">
-            A thin, opinionated layer on top of WebSockets for RPC-style communication and live
-            data. Keep server and UI in sync without manual polling or REST boilerplate.
-          </p>
-          <pre class="code-block">
-wormholes.send("Products:/products").then(data =&gt; {
-  ui.render("productsList", data);
-});</pre>
-        </article>
-
-        <article class="feature-card">
-          <div class="feature-tag">
-            <span class="dot"></span><span>UI Layer</span>
-          </div>
-          <h3 class="feature-title">Xpell-UI &amp; XView</h3>
-          <p class="feature-body">
-            Declarative JSON format for UI. Easy to generate with LLMs, easy to diff, and safe
-            to interpret at runtime — perfect for vibe coding and agent-driven experiences.
-          </p>
-          <pre class="code-block">
-{
-  "_type": "XView",
-  "_data_source": "Products:/products",
-  "_children": [
-    { "_type": "XList", "_bind": "items" }
-  ]
-}</pre>
-        </article>
-      </div>
-    </section>
-
-    <!-- DEV EXPERIENCE -->
-    <section id="devexp" class="section">
-      <h2 class="section-title">Developer experience (planned)</h2>
-      <p class="section-subtitle">
-        The goal is to feel as familiar as tools like Next.js or Vite, but with AI and
-        real-time capabilities baked into the core.
-      </p>
-
-      <div class="features-grid">
-        <article class="feature-card">
-          <h3 class="feature-title">Create an app in seconds</h3>
-          <p class="feature-body">
-            A single command bootstraps server, UI shell, and Wormholes configuration.
-          </p>
-          <pre class="code-block">
-npx create-xpell-app my-app
-cd my-app
-npm run dev</pre>
-        </article>
-
-        <article class="feature-card">
-          <h3 class="feature-title">Vibe-coding workflow</h3>
-          <p class="feature-body">
-            Describe the screen you need in natural language, let the AI generate XView JSON,
-            then refine manually or via prompts.
-          </p>
-          <pre class="code-block">
-"Dashboard with KPIs, table, and filters"
-  ⇢ XView
-  ⇢ Live UI via Xpell-UI</pre>
-        </article>
-
-        <article class="feature-card">
-          <h3 class="feature-title">Open-source core</h3>
-          <p class="feature-body">
-            Xpell core is planned to be open-sourced under MIT license, with advanced AI and GPU
-            features provided by the AIME platform for production workloads.
-          </p>
-          <pre class="code-block">
-<span class="code-comment">// GitHub org</span>
-https://github.com/xpell-ai</pre>
-        </article>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
     <footer>
-      <div>© 2025 Aime Technologies Ltd. · Xpell.ai</div>
+      <div>© 2026 Aime Technologies Ltd. · Xpell.ai</div>
       <div class="footer-links">
-        <a href="https://github.com/xpell-ai" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://github.com/xpell-ai" target="_blank" rel="noreferrer" data-analytics="download" data-item="github">GitHub</a>
         ·
-        <a href="https://xpell.ai" target="_blank" rel="noreferrer">Website</a>
+        <a href="examples/" data-analytics="example" data-item="examples-footer">Examples</a>
         ·
-        <a href="https://discord.gg/cQU79ge3Dx" target="_blank" rel="noreferrer">Discord</a>
+        <a href="xpell-2-alpha/">Alpha</a>
       </div>
     </footer>
   </div>
+  <script src="assets/analytics.js"></script>
 </body>
 
 </html>

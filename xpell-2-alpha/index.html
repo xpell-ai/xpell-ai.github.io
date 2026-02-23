@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xpell 2 Alpha Announcement | xpell.ai</title>
+  <meta name="description" content="Xpell 2 Alpha announcement: runtime-first AI-native architecture, package hierarchy, and next steps for developers." />
+  <link rel="canonical" href="https://xpell.ai/xpell-2-alpha/" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4Z7FD82N7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-L4Z7FD82N7');
+  </script>
+</head>
+
+<body>
+  <div class="page">
+    <header class="nav">
+      <div class="nav-left">
+        <div class="logo">
+          <img src="https://avatars.githubusercontent.com/u/245213194?s=200&v=4" alt="Xpell.ai logo" />
+        </div>
+        <div class="brand-text">
+          <strong>Xpell.ai</strong>
+          <span>Xpell 2 Alpha</span>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Alpha</a>
+        <a href="../examples/">Examples</a>
+        <a href="../index.html#getting-started">Getting Started</a>
+        <a href="https://github.com/xpell-ai" target="_blank" rel="noreferrer" data-analytics="download" data-item="github">Download</a>
+      </nav>
+    </header>
+
+    <main class="hero" style="grid-template-columns: minmax(0, 1fr);">
+      <section class="hero-left">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          <span>Announcement · Alpha</span>
+        </div>
+        <h1 class="hero-title">Xpell 2 Alpha</h1>
+        <p class="hero-subtitle">AI-native architecture for vibe coding (runtime-first).</p>
+      </section>
+    </main>
+
+    <section class="cta-row" aria-label="Alpha call to action">
+      <a class="cta-card" href="../index.html#getting-started">
+        <strong>Docs / Getting Started</strong>
+        <span>Start with package installation and runtime-first patterns.</span>
+      </a>
+      <a class="cta-card" href="../examples/" data-analytics="example" data-item="examples-alpha">
+        <strong>Examples</strong>
+        <span>Review curated examples before building your own modules.</span>
+      </a>
+      <a class="cta-card" href="https://github.com/xpell-ai" target="_blank" rel="noreferrer" data-analytics="download" data-item="github">
+        <strong>Download / GitHub</strong>
+        <span>Clone the source and test the Alpha runtime contracts.</span>
+      </a>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">What’s new in Xpell 2</h2>
+      <ul class="feature-list">
+        <li>Clear modular runtime split across core, node, ui, and 3d packages.</li>
+        <li>AI-native contracts that keep execution deterministic and inspectable.</li>
+        <li>Runtime-first workflow for iterative system changes without rebuild-heavy loops.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Why runtime matters (vs prompt-only generation)</h2>
+      <p class="section-subtitle">
+        Prompt-only generation produces files; runtime collaboration validates behavior. Xpell 2 is designed so AI and developers can operate on live state, stable contracts, and running modules rather than static output alone.
+      </p>
+      <ul class="feature-list">
+        <li>Live state and transport contracts reduce drift between generated code and real behavior.</li>
+        <li>Deterministic runtime updates make collaboration auditable and reversible.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Package hierarchy (core/node/ui/3d)</h2>
+      <div class="features-grid">
+        <article class="feature-card">
+          <h3 class="feature-title">@xpell/core</h3>
+          <ul class="feature-list">
+            <li>XData 2 for structured runtime data.</li>
+            <li>Nano-Commands 2, XEM, XModule, XObject contracts.</li>
+          </ul>
+        </article>
+        <article class="feature-card">
+          <h3 class="feature-title">@xpell/node (xnode)</h3>
+          <ul class="feature-list">
+            <li>Server execution layer with Wormholes 2 transport.</li>
+            <li>XDB persistence and explicit runtime operations.</li>
+          </ul>
+        </article>
+        <article class="feature-card">
+          <h3 class="feature-title">@xpell/ui</h3>
+          <ul class="feature-list">
+            <li>XUI and XUIObject for JSON-first runtime interfaces.</li>
+            <li>Client-side Wormholes integration for live updates.</li>
+          </ul>
+        </article>
+        <article class="feature-card">
+          <h3 class="feature-title">@xpell/3d</h3>
+          <ul class="feature-list">
+            <li>Three.js-based spatial layer wrapped in Xpell contracts.</li>
+            <li>Safe runtime mutation APIs for scene evolution.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">What to do now</h2>
+      <div class="section-links">
+        <a class="btn btn-ghost" href="../index.html#getting-started">Docs / Getting Started</a>
+        <a class="btn btn-ghost" href="../examples/" data-analytics="example" data-item="examples-now">Examples</a>
+        <a class="btn btn-ghost" href="https://github.com/xpell-ai" target="_blank" rel="noreferrer" data-analytics="download" data-item="github">Download / GitHub</a>
+        <a class="btn btn-ghost" href="https://discord.gg/cQU79ge3Dx" target="_blank" rel="noreferrer">Community (Discord)</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Alpha note</h2>
+      <p class="section-subtitle">
+        Xpell 2 is in Alpha. Contracts are evolving, APIs may change, and feedback is welcome. Vibe Coding is the current concept focus; the VIBE UX layer is planned for later.
+      </p>
+    </section>
+
+    <footer>
+      <div>© 2026 Aime Technologies Ltd. · Xpell.ai</div>
+    </footer>
+  </div>
+  <script src="../assets/analytics.js"></script>
+</body>
+
+</html>

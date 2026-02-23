@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tik-Tak-Toe · Example Overview</title>
+  <title>Tik-Tak-Toe Example | Xpell Examples</title>
+  <meta name="description" content="Tik-Tak-Toe example overview built with Xpell UI runtime contracts." />
+  <link rel="canonical" href="https://xpell.ai/examples/ttt.html" />
   <link rel="stylesheet" href="../css/main.css" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4Z7FD82N7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-L4Z7FD82N7');
+  </script>
 </head>
+
 <body class="ttt-body">
   <div class="page ttt-page">
+    <header class="nav">
+      <div class="nav-left">
+        <div class="logo">
+          <img src="https://avatars.githubusercontent.com/u/245213194?s=200&v=4" alt="Xpell.ai logo" />
+        </div>
+        <div class="brand-text">
+          <strong>Xpell.ai</strong>
+          <span>Tik-Tak-Toe Example</span>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../xpell-2-alpha/">Alpha</a>
+        <a href="index.html">Examples</a>
+        <a href="../index.html#getting-started">Getting Started</a>
+        <a href="https://github.com/xpell-ai" target="_blank" rel="noreferrer" data-analytics="download" data-item="github">Download</a>
+      </nav>
+    </header>
+
     <header class="ttt-header">
       <div>
         <div class="pill">
@@ -20,17 +50,17 @@
           view the UI, and jump into the live demo.
         </p>
         <div class="link-row">
-          <a class="btn-inline" href="https://github.com/xpell-ai/examples/tree/main/xpell-ui/Tik-TaK-Toe" target="_blank" rel="noreferrer">GitHub repo</a>
-          <a class="btn-inline" href="https://xpell-ai.github.io/examples/ttt-live" target="_blank" rel="noreferrer">Live demo</a>
+          <a class="btn-inline" href="https://github.com/xpell-ai/examples/tree/main/xpell-ui/Tik-TaK-Toe" target="_blank" rel="noreferrer" data-analytics="download" data-item="github">GitHub repo</a>
+          <a class="btn-inline" href="ttt-live.html" data-analytics="example" data-item="ttt-live">Live demo</a>
         </div>
       </div>
-      <a class="back-link" href="../index.html">← Back</a>
+      <a class="back-link" href="index.html">← Back to examples</a>
     </header>
 
     <section class="hero-card">
       <div class="hero-card-inner example-grid">
         <div class="ttt-media" aria-label="Screenshot preview of the Tic-Tac-Toe demo">
-            <img src="ttt-screenshot.png" alt="Tic-Tac-Toe screenshot" style="max-width: 100%; border-radius: var(--radius-lg);" />
+          <img src="ttt-screenshot.png" alt="Tic-Tac-Toe screenshot" style="max-width: 100%; border-radius: var(--radius-lg);" />
         </div>
 
         <div>
@@ -61,5 +91,7 @@ const createCell = (row, col) =&gt; ({
       </div>
     </section>
   </div>
+  <script src="../assets/analytics.js"></script>
 </body>
+
 </html>

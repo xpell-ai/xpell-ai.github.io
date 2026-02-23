@@ -209,6 +209,22 @@
       color: var(--muted);
     }
 
+    .release-banner {
+      margin: 20px 8px 0;
+      padding: 10px 14px;
+      border-radius: 12px;
+      background: rgba(76,127,255,0.12);
+      border: 1px solid rgba(76,127,255,0.32);
+      font-size: 13px;
+      color: #dbeafe;
+    }
+
+    .release-banner a {
+      color: #bfdbfe;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
     /* HERO RIGHT: card & “diagram” */
     .hero-right {
       display: flex;
@@ -348,6 +364,45 @@
       border: 1px solid var(--border);
     }
 
+    .cta-row {
+      margin-top: 4px;
+      padding: 0 8px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    @media (max-width: 840px) {
+      .cta-row {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .cta-card {
+      display: block;
+      padding: 14px;
+      border-radius: 14px;
+      background: rgba(15,23,42,0.9);
+      border: 1px solid rgba(148,163,184,0.35);
+    }
+
+    .cta-card strong {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .cta-card span {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .cta-card:hover {
+      border-color: var(--accent);
+      background: rgba(15,23,42,1);
+    }
+
     .section-title {
       font-size: 18px;
       margin-bottom: 14px;
@@ -422,6 +477,27 @@
       color: #6b7280;
     }
 
+    .feature-list {
+      list-style: disc;
+      padding-left: 16px;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 12px;
+      display: grid;
+      gap: 6px;
+    }
+
+    .feature-list strong {
+      color: var(--text);
+    }
+
+    .section-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
     /* FOOTER */
     footer {
       margin-top: 26px;
@@ -445,6 +521,11 @@
       width: 80%;
       max-width: 1200px;
       padding-top: 28px;
+    }
+
+    .ttt-page .nav,
+    .dyn-page .nav {
+      padding: 8px 0 14px;
     }
 
     .ttt-header {
@@ -545,6 +626,13 @@
       width: 80%;
       max-width: 1200px;
       padding-top: 28px;
+    }
+
+    @media (max-width: 840px) {
+      .ttt-page,
+      .dyn-page {
+        width: 100%;
+      }
     }
 
     .dyn-header {
