@@ -31,9 +31,10 @@
       </div>
       <nav class="nav-links">
         <a href="../index.html">Home</a>
-        <a href="../xpell-2-alpha/">Alpha</a>
+        <a href="../xpell-2-alpha/">Xpell 2 Alpha</a>
+        <a href="../getting-started/">Getting Started</a>
         <a href="index.html">Examples</a>
-        <a href="../index.html#getting-started">Getting Started</a>
+        <a href="../codex/">Codex</a>
         <a href="https://github.com/xpell-ai" target="_blank" rel="noreferrer" data-analytics="download" data-item="github">Download</a>
       </nav>
     </header>
@@ -42,17 +43,18 @@
       <div>
         <div class="pill">
           <span class="dot"></span>
-          <span>Xpell-UI Example</span>
+          <span>@xpell/ui Example</span>
         </div>
         <h1 class="hero-title" style="margin-top: 10px;">Tik-Tak-Toe</h1>
         <p class="hero-subtitle">
-          Quick overview of the Tic-Tac-Toe sample built with Xpell-UI and XData. Explore the source,
+          Quick overview of the Tic-Tac-Toe sample built with @xpell/ui and XData. Explore the source,
           view the UI, and jump into the live demo.
         </p>
         <div class="link-row">
           <a class="btn-inline" href="https://github.com/xpell-ai/examples/tree/main/xpell-ui/Tik-TaK-Toe" target="_blank" rel="noreferrer" data-analytics="download" data-item="github">GitHub repo</a>
           <a class="btn-inline" href="ttt-live.html" data-analytics="example" data-item="ttt-live">Live demo</a>
         </div>
+        <p class="hero-note" style="margin-top: 8px;">Note: live demo sources are being migrated from legacy package names to <code>@xpell/*</code> imports.</p>
       </div>
       <a class="back-link" href="index.html">← Back to examples</a>
     </header>
@@ -69,7 +71,7 @@
           </div>
           <pre class="code-block"><span class="code-comment">// main entry</span>
 import "animate.css";
-import { Xpell as _x, _xlog, XUI, XData as _xd, XUIAnimate as _xa } from "xpell-ui";
+import { Xpell as _x, _xlog, XUI, XData as _xd, XUIAnimate as _xa } from "@xpell/ui";
 
 _x.verbose = true;
 _x.start();

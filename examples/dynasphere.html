@@ -31,9 +31,10 @@
       </div>
       <nav class="nav-links">
         <a href="../index.html">Home</a>
-        <a href="../xpell-2-alpha/">Alpha</a>
+        <a href="../xpell-2-alpha/">Xpell 2 Alpha</a>
+        <a href="../getting-started/">Getting Started</a>
         <a href="index.html">Examples</a>
-        <a href="../index.html#getting-started">Getting Started</a>
+        <a href="../codex/">Codex</a>
         <a href="https://github.com/xpell-ai" target="_blank" rel="noreferrer" data-analytics="download" data-item="github">Download</a>
       </nav>
     </header>
@@ -42,17 +43,18 @@
       <div>
         <div class="pill">
           <span class="dot"></span>
-          <span>Xpell-3D Example</span>
+          <span>@xpell/3d Example</span>
         </div>
         <h1 class="hero-title" style="margin-top: 10px;">DynaSphere Audio Visualizator</h1>
         <p class="hero-subtitle">
-          Audio-reactive 3D sphere driven by Xpell-3D primitives and Wormholes streaming waveform data.
+          Audio-reactive 3D sphere driven by @xpell/3d primitives and Wormholes streaming waveform data.
           Explore the source, see the render, and open the live demo.
         </p>
         <div class="link-row">
           <a class="btn-inline" href="https://github.com/xpell-ai/examples/tree/main/xpell-3d/DynaSphere" target="_blank" rel="noreferrer" data-analytics="download" data-item="github">GitHub repo</a>
           <a class="btn-inline" href="dynasphere-live.html" data-analytics="example" data-item="dynasphere-live">Live demo</a>
         </div>
+        <p class="hero-note" style="margin-top: 8px;">Note: live demo sources are being migrated from legacy package names to <code>@xpell/*</code> imports.</p>
       </div>
       <a class="back-link" href="index.html">← Back to examples</a>
     </header>
@@ -68,7 +70,7 @@
             <span class="dot"></span><span>Code excerpt</span>
           </div>
           <pre class="code-block"><span class="code-comment">// render loop</span>
-import { Xpell as _x, X3D, XData as _xd } from "xpell-3d";
+import { Xpell as _x, X3D, XData as _xd } from "@xpell/3d";
 
 _x.start();
 _x.loadModule(X3D);
