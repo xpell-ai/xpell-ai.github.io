@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Xpell 2 Alpha | AI-native Runtime Architecture</title>
-  <meta name="description" content="Xpell 2 Alpha is a runtime-first, AI-native architecture for vibe coding with modular packages: core, node, ui, and 3d." />
+  <title>Real-time Vibe Coding | Xpell 2 Beta</title>
+  <meta name="description" content="Xpell 2 Beta is an AI-native runtime for real-time vibe coding: modify your app while it runs, avoid rebuild loops, and spend fewer tokens." />
   <link rel="canonical" href="https://xpell.ai/" />
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="assets/css/home.css" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -16,9 +16,9 @@
   "alternateName": "Xpell 2",
   "url": "https://xpell.ai",
   "image": "https://xpell.ai/icon-512.png",
-  "description": "Xpell 2 Alpha is an AI-native runtime architecture for building real-time UI, 3D, and server-connected systems with deterministic contracts.",
+  "description": "Xpell 2 is an AI-native runtime for modifying applications in real time without rebuild loops.",
   "applicationCategory": "DeveloperApplication",
-  "softwareVersion": "2.0.0-alpha",
+  "softwareVersion": "2.0.0-beta",
   "operatingSystem": "Any",
   "author": {
     "@type": "Organization",
@@ -41,10 +41,10 @@
     "price": "0",
     "priceCurrency": "USD"
   },
-  "downloadUrl": "https://www.npmjs.com/package/xpell",
+  "downloadUrl": "https://github.com/xpell-ai/xpell-vibe-starter",
   "sameAs": [
     "https://github.com/xpell-ai",
-    "https://www.npmjs.com/package/xpell"
+    "https://github.com/xpell-ai/xpell-vibe-starter"
   ]
 }
 </script>
@@ -58,188 +58,252 @@
 </head>
 
 <body>
-  <div class="page">
-    <header class="nav">
-      <div class="nav-left">
-        <div class="logo">
+  <div class="launch-shell">
+    <header class="site-nav">
+      <div class="site-brand">
+        <div class="site-brand-mark">
           <img src="https://avatars.githubusercontent.com/u/245213194?s=200&v=4" alt="Xpell.ai logo" />
         </div>
-        <div class="brand-text">
-          <strong>Xpell.ai</strong>
-          <span>AI-native runtime architecture</span>
+        <div class="site-brand-copy">
+          <strong>Xpell</strong>
+          <span>Xpell 2 Beta launch site</span>
         </div>
       </div>
-
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="xpell-2-alpha/">Xpell 2 Alpha</a>
-        <a href="getting-started/">Getting Started</a>
+      <nav class="site-nav-links">
+        <a href="index.html">Xpell</a>
+        <a href="getting-started/">Docs</a>
         <a href="examples/">Examples</a>
-        <a href="codex/">Codex</a>
-        <a href="https://github.com/xpell-ai" target="_blank" rel="noreferrer" data-analytics="download" data-item="github">Download</a>
+        <a href="#videos" data-analytics="example" data-item="videos-nav">Videos</a>
+        <a href="https://github.com/xpell-ai" target="_blank" rel="noreferrer" data-analytics="download" data-item="github">GitHub</a>
       </nav>
     </header>
 
     <main>
-      <section class="release-banner" aria-label="Xpell 2 Alpha release">
-        New: Xpell 2 Alpha — AI-native architecture for vibe coding. <a href="xpell-2-alpha/">Read the announcement →</a>
-      </section>
-
       <section class="hero">
-        <section class="hero-left">
-          <div class="badge">
-            <span class="badge-dot"></span>
-            <span>Open source · Alpha</span>
+        <div class="hero-wrap">
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            <span>Xpell 2 Beta</span>
           </div>
-
-          <h1 class="hero-title">
-            Xpell 2 Alpha<br />
-            <span class="accent">Runtime-first collaboration for AI and developers.</span>
-          </h1>
-
-          <p class="hero-subtitle">
-            Build with a running system, not a rebuild loop. Xpell keeps server, UI, and runtime state connected so AI can collaborate with live contracts instead of prompt-only code generation.
-          </p>
-
+          <h1>Real-time Vibe Coding — No rebuild. No wasted tokens.</h1>
+          <p>Xpell 2 is an AI-native runtime that lets you modify your app while it's running. Generate, preview, and apply changes instantly — without recompiling your code.</p>
+          <p class="hero-sub">Build dashboards, internal tools, and AI interfaces in minutes — without rebuild loops or full code generation.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="getting-started/">Docs / Getting Started</a>
-            <a class="btn btn-ghost" href="examples/" data-analytics="example" data-item="examples-home">Examples</a>
-            <a class="btn btn-ghost" href="https://github.com/xpell-ai" target="_blank" rel="noreferrer" data-analytics="download" data-item="github">Download / GitHub</a>
+            <a class="btn btn-primary" href="https://github.com/xpell-ai/xpell-vibe-starter" target="_blank" rel="noreferrer" data-analytics="download" data-item="vibe-starter">Get Started in 2 Minutes</a>
+            <a class="btn btn-secondary" href="#demo" data-analytics="example" data-item="hero-live-demo">See it in action</a>
           </div>
+          <div class="hero-note">Modify your app live. Preview changes instantly. Save only what you accept.</div>
+        </div>
 
-          <p class="hero-note">Created by Aime Technologies. Vibe Coding is supported now; the VIBE UX layer comes later.</p>
-        </section>
-      </section>
-
-      <section class="cta-row" aria-label="Developer calls to action">
-        <a class="cta-card" href="getting-started/">
-          <strong>Docs / Getting Started</strong>
-          <span>Install packages, review contracts, and start with a runtime-first workflow.</span>
-        </a>
-        <a class="cta-card" href="examples/" data-analytics="example" data-item="examples-index">
-          <strong>Examples</strong>
-          <span>Use curated examples to understand the architecture and extend it quickly.</span>
-        </a>
-        <a class="cta-card" href="https://github.com/xpell-ai" target="_blank" rel="noreferrer" data-analytics="download" data-item="github">
-          <strong>Download / GitHub</strong>
-          <span>Clone, inspect, and run Xpell 2 Alpha directly from the source.</span>
-        </a>
+        <div class="launch-panel" style="grid-template-columns: minmax(0, 1fr);">
+          <article class="panel-card">
+            <h2>Xpell 2 Beta</h2>
+            <p>Run the app, prompt the runtime, preview the result, then persist the change. No rebuild loop required.</p>
+            <div class="alpha-grid">
+              <div class="alpha-node">
+                <strong>Prompt</strong>
+                <span>Describe the change you want in the running system.</span>
+              </div>
+              <div class="alpha-node">
+                <strong>Preview</strong>
+                <span>Inspect the generated UI or behavior before saving it.</span>
+              </div>
+              <div class="alpha-node">
+                <strong>Apply</strong>
+                <span>Accept the runtime change without recompiling the app.</span>
+              </div>
+              <div class="alpha-node">
+                <strong>Persist</strong>
+                <span>Save the accepted structure back into the project.</span>
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
 
-    <section id="ai-native-architecture" class="section">
-      <h2 class="section-title">AI-native architecture</h2>
-      <p class="section-subtitle">
-        Xpell is built for runtime collaboration. Instead of generating files and hoping they run, AI and developers work against a live execution model with deterministic contracts.
-      </p>
-      <ul class="feature-list">
-        <li><strong>Runtime-first workflow:</strong> evolve UI and state without a rebuild loop for every iteration.</li>
-        <li><strong>Contracted behavior:</strong> data and commands stay structured for safe automation.</li>
-        <li><strong>Live collaboration:</strong> AI can inspect and update running systems, not only static prompts.</li>
-      </ul>
-    </section>
-
-    <section id="packages" class="section">
-      <h2 class="section-title">Xpell 2 packages</h2>
-      <p class="section-subtitle">A modular hierarchy for runtime development and AI collaboration.</p>
-
-      <div class="features-grid">
-        <article class="feature-card">
-          <h3 class="feature-title">@xpell/core</h3>
-          <ul class="feature-list">
-            <li>XData 2 and Nano-Commands 2 contracts</li>
-            <li>XEM, XModule, and XObject foundations</li>
-          </ul>
+    <section class="section">
+      <div class="section-header">
+        <h2>2-Minute Start</h2>
+        <p>Start from the runtime starter, boot the local app, then modify it while it runs.</p>
+      </div>
+      <div class="start-grid">
+        <article class="card command-card">
+          <h3>Install and run</h3>
+          <pre class="command-block"><code>git clone https://github.com/xpell-ai/xpell-vibe-starter
+pnpm install
+pnpm dev</code></pre>
         </article>
-
-        <article class="feature-card">
-          <h3 class="feature-title">@xpell/node (xnode)</h3>
-          <ul class="feature-list">
-            <li>Server execution layer with Wormholes 2</li>
-            <li>Deterministic transport and XDB-backed state</li>
-          </ul>
-        </article>
-
-        <article class="feature-card">
-          <h3 class="feature-title">@xpell/ui</h3>
-          <ul class="feature-list">
-            <li>XUI and XUIObject runtime views</li>
-            <li>JSON-first UI contracts with client Wormholes</li>
-          </ul>
-        </article>
-
-        <article class="feature-card">
-          <h3 class="feature-title">@xpell/3d</h3>
-          <ul class="feature-list">
-            <li>Three.js-based spatial runtime layer</li>
-            <li>Encapsulated 3D mutations through contracts</li>
-          </ul>
+        <article class="card command-card">
+          <h3>What happens next</h3>
+          <p>Open IntelliSphere (the in-app AI editor) → type → UI changes instantly.</p>
+          <p class="card-status">Starter repo: <a href="https://github.com/xpell-ai/xpell-vibe-starter" target="_blank" rel="noreferrer" data-analytics="download" data-item="vibe-starter-inline">xpell-ai/xpell-vibe-starter</a></p>
         </article>
       </div>
     </section>
 
-    <section id="getting-started" class="section">
-      <h2 class="section-title">Getting Started</h2>
-      <p class="section-subtitle">
-        Use the actionable 5-10 minute flow for install, hello UI, and xnode preview.
-      </p>
-      <div class="section-links">
-        <a class="btn btn-ghost" href="getting-started/">Open full guide</a>
+    <section class="section" id="demo">
+      <div class="section-header">
+        <h2>Modify your app live</h2>
+        <p>Xpell keeps the app running while changes are generated, previewed, and applied in real time.</p>
+        <p class="demo-intro">Watch how a running app is modified live — no rebuild, no reload.</p>
       </div>
-      <pre class="code-block">npm i @xpell/core @xpell/node @xpell/ui @xpell/3d
-# optional: npm i xpell</pre>
-      <div class="section-links">
-        <a class="btn btn-ghost" href="examples/" data-analytics="example" data-item="examples-getting-started">Browse examples</a>
-        <a class="btn btn-ghost" href="https://github.com/xpell-ai" target="_blank" rel="noreferrer" data-analytics="download" data-item="github">Download from GitHub</a>
-        <a class="btn btn-ghost" href="https://www.npmjs.com/package/xpell" target="_blank" rel="noreferrer" data-analytics="download" data-item="npm">Install via npm</a>
-        <a class="btn btn-ghost" href="codex/">Codex Skills</a>
+      <div class="demo-video" style="margin-bottom: 18px; overflow: hidden; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface);">
+        <iframe
+          width="100%"
+          height="480"
+          src="https://www.youtube.com/embed/eN8E4unLjuc"
+          title="Xpell Real-time Vibe Coding Demo"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          loading="lazy"
+          allowfullscreen
+          style="display: block; width: 100%; max-width: 100%; aspect-ratio: 16 / 9; height: auto;">
+        </iframe>
       </div>
-      <p class="hero-note" style="margin-top: 12px;">Codex Skills are in preview. UX layer comes later.</p>
-    </section>
-
-    <section id="examples" class="section">
-      <h2 class="section-title">Examples</h2>
-      <p class="section-subtitle">Curated alpha examples to explore end-to-end runtime behavior.</p>
-
-      <div class="features-grid">
-        <article class="feature-card">
-          <div class="feature-tag">
-            <span class="dot"></span><span>@xpell/ui</span>
-          </div>
-          <h3 class="feature-title">Tik-Tak-Toe (UI)</h3>
-          <p class="feature-body">Declarative XUI + live state updates using Wormholes contracts.</p>
-          <p class="feature-body" style="margin-top: 8px;">
-            <a class="btn btn-ghost" href="examples/ttt.html" data-analytics="example" data-item="ttt-overview">Open example page →</a>
-          </p>
-        </article>
-
-        <article class="feature-card">
-          <div class="feature-tag">
-            <span class="dot"></span><span>@xpell/3d</span>
-          </div>
-          <h3 class="feature-title">DynaSphere Audio Visualizator</h3>
-          <p class="feature-body">3D scene updates driven by live audio data with Xpell-3D primitives.</p>
-          <p class="feature-body" style="margin-top: 8px;">
-            <a class="btn btn-ghost" href="examples/dynasphere.html" data-analytics="example" data-item="dynasphere-overview">Open example page →</a>
-          </p>
+      <div class="demo-layout">
+        <div>
+          <h3>Using IntelliSphere</h3>
+          <p>IntelliSphere is the in-app AI editor that lets you edit the running system in real time. Type a prompt, preview the result, and apply changes instantly.</p>
+          <ol class="flow-list">
+            <li><strong>Run</strong><span>Start the app and keep the runtime active.</span></li>
+            <li><strong>Prompt</strong><span>Describe the change you want in plain language.</span></li>
+            <li><strong>UI update</strong><span>Preview the generated interface update immediately.</span></li>
+            <li><strong>Apply</strong><span>Accept the change when the runtime output is correct.</span></li>
+            <li><strong>Saved</strong><span>Persist the accepted structure back into the project.</span></li>
+          </ol>
+        </div>
+        <article class="card demo-card">
+          <h3>Example prompt</h3>
+          <pre class="command-block"><code>Add email field to users</code></pre>
+          <p class="demo-cta">Try this in the starter app → <a href="https://github.com/xpell-ai/xpell-vibe-starter" target="_blank" rel="noreferrer">xpell-vibe-starter</a></p>
+          <p>Use the running system as the editing surface instead of regenerating a full application snapshot.</p>
         </article>
       </div>
     </section>
 
-    <footer>
-      <div>© 2026 Aime Technologies Ltd. · Xpell.ai</div>
-      <div class="footer-links">
+    <section class="section" id="videos">
+      <div class="section-header">
+        <h2>Videos</h2>
+        <p>Recorded walkthroughs for the runtime workflow, focused on live edits inside the running app.</p>
+      </div>
+      <div class="video-grid" style="grid-template-columns: minmax(0, 1fr);">
+        <article class="card">
+          <iframe
+          width="100%"
+          height="220"
+          src="https://www.youtube.com/embed/eN8E4unLjuc"
+          title="Xpell Demo"
+          frameborder="0"
+          loading="lazy"
+          allowfullscreen
+          style="display: block; width: 100%; max-width: 100%; border: 0; border-radius: 12px;">
+          </iframe>
+          <h3>Xpell 2 Real-time Demo</h3>
+          <p>Run the starter app, prompt changes, and apply them live without rebuilding.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Stop regenerating apps. Start evolving them.</h2>
+        <p>Xpell treats AI as part of a running interpreter instead of a one-shot generator.</p>
+      </div>
+      <div class="comparison-card">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Traditional AI builders</th>
+              <th>Xpell</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Regenerate full app output after each prompt.</td>
+              <td>Modify the running app directly.</td>
+            </tr>
+            <tr>
+              <td>Rebuild or redeploy to inspect every change.</td>
+              <td>Preview changes without rebuild loops.</td>
+            </tr>
+            <tr>
+              <td>Spend tokens repeating unchanged structure.</td>
+              <td>Spend tokens on the delta you actually need.</td>
+            </tr>
+            <tr>
+              <td>Prompt output sits outside runtime state.</td>
+              <td>Prompt output becomes part of runtime state and can be persisted.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Architecture</h2>
+        <p>Xpell is a real-time interpreter, not a framework.</p>
+      </div>
+      <div class="architecture-grid">
+        <article class="card">
+          <h3>@xpell/core</h3>
+          <p>Runtime engine primitives, state, events, and deterministic contracts.</p>
+        </article>
+        <article class="card">
+          <h3>@xpell/node</h3>
+          <p>xnode runtime for server execution, modules, and runtime operations.</p>
+        </article>
+        <article class="card">
+          <h3>@xpell/ui</h3>
+          <p>Runtime-driven UI layer that updates while the app is running.</p>
+        </article>
+        <article class="card">
+          <h3>@xpell/3d</h3>
+          <p>3D runtime layer using the same interpreter model for spatial apps.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>AI that edits your app while it runs</h2>
+        <p>Prompt -> runtime -> persist. Generate the change, preview it in the running app, then save the accepted result into the project.</p>
+      </div>
+      <div class="entry-grid">
+        <a class="card entry-card" href="getting-started/">
+          <h3>Getting Started</h3>
+          <p>Move from the quick starter into the step-by-step Xpell 2 Beta flow.</p>
+          <code>/getting-started/</code>
+        </a>
+        <a class="card entry-card" href="examples/" data-analytics="example" data-item="examples-home">
+          <h3>Examples</h3>
+          <p>Inspect focused runtime examples after the starter is running locally.</p>
+          <code>/examples/</code>
+        </a>
+        <a class="card entry-card" href="https://github.com/xpell-ai" target="_blank" rel="noreferrer" data-analytics="download" data-item="github">
+          <h3>GitHub</h3>
+          <p>Use the starter repo and package sources as the primary code entry point.</p>
+          <code>github.com/xpell-ai</code>
+        </a>
+        <a class="card entry-card" href="#videos" data-analytics="example" data-item="videos-home">
+          <h3>Videos</h3>
+          <p>Watch the published runtime-editing walkthroughs when they are available.</p>
+          <code>#videos</code>
+        </a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div>Xpell</div>
+      <div class="site-footer-links">
         <a href="https://github.com/xpell-ai" target="_blank" rel="noreferrer" data-analytics="download" data-item="github">GitHub</a>
-        ·
-        <a href="examples/" data-analytics="example" data-item="examples-footer">Examples</a>
-        ·
-        <a href="getting-started/">Getting Started</a>
-        ·
-        <a href="codex/">Codex</a>
+        <a href="getting-started/">Docs</a>
+        <a href="https://aimeverse.com" target="_blank" rel="noreferrer">Aime Technologies</a>
       </div>
     </footer>
   </div>
-  <script src="assets/analytics.js"></script>
+  <script src="assets/js/analytics.js"></script>
 </body>
 
 </html>
