@@ -87,7 +87,7 @@
           </div>
           <h1>Build apps while they run.</h1>
           <p>Xpell 2 is an AI-native runtime that lets you modify applications in real time without rebuild loops, refresh loops, or wasted generation cycles.</p>
-          <p class="hero-sub">Real-time vibe coding becomes the workflow, not the pitch: prompt the running app, preview the mutation, and keep moving without throwing away state.</p>
+          <p class="hero-sub">Runtime Mutation becomes the workflow, not the pitch: prompt the running app, preview the mutation, and keep moving without throwing away state.</p>
           <p class="hero-sub">
             
             <p>Traditional AI: Prompt → Generate → Build → Refresh</p>
@@ -96,47 +96,34 @@
           </p>
           
           <div class="hero-actions">
-            <!-- TODO: Replace with the live demo URL when the public demo is available. -->
-            <a class="btn btn-primary" href="#" data-analytics="example" data-item="hero-live-demo">Try the Live Demo</a>
-            <!-- TODO: Replace with the 60s demo URL when the launch video is available. -->
-            <a class="btn btn-secondary" href="#" data-analytics="example" data-item="hero-60s-demo">Watch 60s Demo</a>
+            <a class="btn btn-primary" href="https://github.com/xpell-ai/xpell-vibe-starter" target="_blank" rel="noreferrer" data-analytics="download" data-item="hero-starter">Try the Starter</a>
+            <a class="btn btn-secondary" href="#demo" data-analytics="example" data-item="hero-beta-demo">Watch Beta Demo</a>
           </div>
           <div class="hero-note">No rebuild loop. No refresh loop. Less wasted AI tokens.</div>
         </div>
 
         <div class="launch-panel demo-placeholder-panel" id="launch-demo">
           <article class="panel-card demo-placeholder-card">
-            <div class="demo-placeholder-label">60s launch demo</div>
-            <h2>Watch Xpell mutate a running application without reloads, rebuilds, or losing state.</h2>
+            <div class="demo-placeholder-label">Public beta demo</div>
+            <h2>Xpell 2 Beta - Build Apps While They Run</h2>
             <div class="demo-flow">
-              <span>Create Todo App</span>
-              <span>Add priorities</span>
-              <span>Add statistics panel</span>
-              <span>Change theme</span>
-              <span>App updates live</span>
+              <span>Open Xpell Vibe Studio</span>
+              <span>Modify a running application</span>
+              <span>Persist the change</span>
+              <span>Refresh the page</span>
+              <span>Apply a new mutation using AI</span>
             </div>
-            <!-- TODO: Replace this card with the final 60s launch demo video/GIF. -->
-            <div class="demo-screen" aria-label="Demo placeholder showing a running todo app updated live">
-              <div class="demo-screen-top">
-                <span aria-hidden="true">&#8203;</span>
-                <span aria-hidden="true">&#8203;</span>
-                <span aria-hidden="true">&#8203;</span>
-              </div>
-              <div class="demo-screen-body">
-                <div class="demo-app-preview">
-                  <strong>Todo App</strong>
-                  <div class="demo-task high">Ship launch page <small>High</small></div>
-                  <div class="demo-task medium">Record 60s demo <small>Medium</small></div>
-                  <div class="demo-task low">Tune theme <small>Low</small></div>
-                </div>
-                <div class="demo-stats-preview">
-                  <strong>Live stats</strong>
-                  <span>3 active tasks</span>
-                  <span>2 priority edits</span>
-                  <span>Theme updated</span>
-                </div>
-              </div>
-            </div>
+            <iframe
+              width="100%"
+              height="480"
+              src="https://www.youtube.com/embed/xkR_2gga9-0"
+              title="Xpell 2 Beta - Build Apps While They Run"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              loading="lazy"
+              allowfullscreen
+              style="display: block; width: 100%; max-width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0; border-radius: var(--radius);">
+            </iframe>
           </article>
         </div>
 
@@ -151,7 +138,7 @@
               <ul>
                 <li>Runtime views</li>
                 <li>Live updates</li>
-                <li>XStudio editing</li>
+                <li>Xpell Vibe Studio editing</li>
                 <li>Manual JSON/runtime artifact editing</li>
                 <li>Generated modules</li>
               </ul>
@@ -186,16 +173,16 @@
 
     <section class="section" id="demo">
       <div class="section-header">
-        <h2>Modify your app live</h2>
-        <p>Xpell keeps the app running while changes are generated, previewed, and applied in real time.</p>
-        <p class="demo-intro">Real-time vibe coding works because the runtime can accept targeted mutations instead of regenerating the whole app.</p>
+        <h2>Xpell 2 Beta - Build Apps While They Run</h2>
+        <p>Open Xpell Vibe Studio, modify a running application, persist the change, refresh the page, and apply a new mutation using AI.</p>
+        <p class="demo-intro">Runtime Mutation works because Xpell 2 can accept targeted changes instead of regenerating the whole app.</p>
       </div>
       <div class="demo-video" style="margin-bottom: 18px; overflow: hidden; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface);">
         <iframe
           width="100%"
           height="480"
-          src="https://www.youtube.com/embed/eN8E4unLjuc"
-          title="Xpell Real-time Vibe Coding Demo"
+          src="https://www.youtube.com/embed/xkR_2gga9-0"
+          title="Xpell 2 Beta - Build Apps While They Run"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           loading="lazy"
@@ -205,8 +192,8 @@
       </div>
       <div class="demo-layout">
         <div>
-          <h3>Using XStudio</h3>
-          <p>XStudio is the in-app AI editor for the Developer Preview. Type a prompt, preview the result, and apply the mutation while the app keeps running.</p>
+          <h3>Using Xpell Vibe Studio</h3>
+          <p>Xpell Vibe Studio is the runtime editor for Xpell 2. Type a prompt, preview the result, and apply the mutation while the app keeps running.</p>
           <ol class="flow-list">
             <li><strong>Run</strong><span>Start the app and keep the runtime active.</span></li>
             <li><strong>Prompt</strong><span>Describe the change you want in plain language.</span></li>
@@ -292,7 +279,7 @@ pnpm dev</code></pre>
         </article>
         <article class="card command-card">
           <h3>What happens next</h3>
-          <p>Open XStudio (CTRL+E / CMD+E / WIN+E), describe a change, and watch the running app update without leaving its current state.</p>
+          <p>Open Xpell Vibe Studio (CTRL+E / CMD+E / WIN+E), describe a change, and watch the running app update without leaving its current state.</p>
           <p class="card-status">Starter repo: <a href="https://github.com/xpell-ai/xpell-vibe-starter" target="_blank" rel="noreferrer" data-analytics="download" data-item="vibe-starter-inline">xpell-ai/xpell-vibe-starter</a></p>
         </article>
       </div>
@@ -308,15 +295,15 @@ pnpm dev</code></pre>
           <iframe
           width="100%"
           height="220"
-          src="https://www.youtube.com/embed/eN8E4unLjuc"
-          title="Xpell Demo"
+          src="https://www.youtube.com/embed/xkR_2gga9-0"
+          title="Xpell 2 Beta Demo"
           frameborder="0"
           loading="lazy"
           allowfullscreen
           style="display: block; width: 100%; max-width: 100%; border: 0; border-radius: 12px;">
           </iframe>
-          <h3>Xpell 2 Real-time Demo</h3>
-          <p>Run the starter app, prompt changes, and apply them live without rebuilding.</p>
+          <h3>Xpell 2 Beta Demo</h3>
+          <p>Watch a running application evolve through runtime mutations without rebuilds or refresh loops.</p>
         </article>
       </div>
     </section>
