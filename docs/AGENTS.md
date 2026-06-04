@@ -202,3 +202,44 @@ When implementing a change:
 
 ## 10) Standard prompt header (use this in every Codex task)
 
+## Xpell 2 Narrative Contract
+
+The homepage must communicate the following concepts in order:
+
+1. Build apps while they run.
+2. Real-time AI-native runtime.
+3. Runtime mutation instead of rebuild loops.
+4. Runtime artifacts instead of generated source trees.
+5. AI accelerates the runtime but is not the runtime.
+
+The site should optimize for:
+- developer understanding
+- product clarity
+- demo conversion
+
+The site should NOT optimize for:
+- explaining every subsystem
+- framework comparisons
+- architecture deep-dives above the fold
+
+Visitors should understand the value proposition within 10 seconds.
+
+## Founder Story Contract
+
+The origin story of Xpell is important.
+
+Key narrative:
+
+WordPress made websites editable.
+
+Xpell explores making applications editable.
+
+The original goal was reducing the cost and delay of software changes.
+
+AI later transformed this runtime into an AI-native application platform.
+
+This story may be referenced on:
+- homepage
+- about page
+- blog posts
+- launch announcements

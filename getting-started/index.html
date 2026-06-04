@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Getting Started (Xpell 2 Alpha) | xpell.ai</title>
-  <meta name="description" content="Get started with Xpell 2 Alpha in 5-10 minutes: install scoped packages, run a hello UI flow, and review xnode + Wormholes preview steps." />
+  <title>Getting Started with Xpell 2 — Runtime Mutation in 5 Minutes</title>
+  <meta name="description" content="Install the Xpell starter, configure your AI key, open XStudio, and modify a running application with Xpell 2 Developer Preview." />
   <link rel="canonical" href="https://xpell.ai/getting-started/" />
-  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../assets/css/home.css" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4Z7FD82N7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -18,18 +18,18 @@
 </head>
 
 <body>
-  <div class="page">
-    <header class="nav">
-      <div class="nav-left">
-        <div class="logo">
-          <img src="https://avatars.githubusercontent.com/u/245213194?s=200&v=4" alt="Xpell.ai logo" />
+  <div class="launch-shell getting-started-page">
+    <header class="site-nav">
+      <div class="site-brand">
+        <div class="site-brand-mark">
+          <img src="https://avatars.githubusercontent.com/u/245213194?s=200&amp;v=4" alt="Xpell.ai logo" />
         </div>
-        <div class="brand-text">
-          <strong>Xpell.ai</strong>
-          <span>Getting Started</span>
+        <div class="site-brand-copy">
+          <strong>Xpell</strong>
+          <span>Xpell 2 Developer Preview</span>
         </div>
       </div>
-      <nav class="nav-links">
+      <nav class="site-nav-links">
         <a href="../index.html">Xpell</a>
         <a href="index.html">Docs</a>
         <a href="../examples/">Examples</a>
@@ -38,67 +38,186 @@
       </nav>
     </header>
 
-    <main class="hero" style="grid-template-columns: minmax(0, 1fr); padding-bottom: 12px;">
-      <section class="hero-left">
-        <div class="badge">
-          <span class="badge-dot"></span>
-          <span>5-10 minute flow · Alpha</span>
+    <main>
+      <section class="hero getting-started-hero">
+        <div class="hero-wrap">
+          <div class="eyebrow">
+            <span class="eyebrow-dot" aria-hidden="true">&#8203;</span>
+            <span>5-minute runtime mutation · Developer Preview</span>
+          </div>
+          <h1>Getting Started with Xpell 2</h1>
+          <p>Install the starter, connect your AI provider, open XStudio, and make your first runtime mutation while the app is running.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://github.com/xpell-ai/xpell-vibe-starter" target="_blank" rel="noreferrer" data-analytics="download" data-item="starter-repo">Start with the starter repo</a>
+            <a class="btn btn-secondary" href="#setup-video" data-analytics="example" data-item="setup-video">Watch setup video</a>
+          </div>
+          <div class="hero-note">Install starter -> configure AI key -> run app -> open XStudio -> prompt mutation -> preview/apply -> save view.</div>
         </div>
-        <h1 class="hero-title">Getting Started (Xpell 2 Alpha)</h1>
-        <p class="hero-subtitle">Do this, then see something quickly. Start with scoped alpha packages, run a hello UI bootstrap, then review xnode + Wormholes preview flow.</p>
+      </section>
+
+      <section class="section" id="setup-video">
+        <div class="section-header">
+          <h2>Watch the setup walkthrough</h2>
+          <p>A short walkthrough will show how to clone the starter, add your AI key, start the runtime, open XStudio, and apply your first change.</p>
+        </div>
+        <!-- TODO: Replace with the final Getting Started setup video. -->
+        <article class="card setup-video-card">
+          <iframe
+            width="100%"
+            height="480"
+            src="https://www.youtube.com/embed/eN8E4unLjuc"
+            title="Xpell 2 setup walkthrough"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
+          <p class="card-status">Temporary runtime demo reused until the setup-specific walkthrough is published.</p>
+        </article>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Install the starter</h2>
+          <p>Start from the Developer Preview starter instead of installing low-level packages manually.</p>
+        </div>
+        <div class="setup-steps">
+          <article class="card command-card">
+            <h3>Step 1 — Clone the starter</h3>
+            <pre class="command-block"><code>git clone https://github.com/xpell-ai/xpell-vibe-starter
+cd xpell-vibe-starter
+pnpm install</code></pre>
+          </article>
+          <article class="card command-card">
+            <h3>Step 2 — Configure AI keys</h3>
+            <!-- TODO: Replace placeholder env instructions with exact supported provider variables from the starter repo. -->
+            <pre class="command-block"><code>cp .env.example .env</code></pre>
+            <p>Add the AI provider key required by your local starter configuration.</p>
+          </article>
+          <article class="card command-card">
+            <h3>Step 3 — Run the app</h3>
+            <pre class="command-block"><code>pnpm dev</code></pre>
+            <p>Keep the app running. Xpell edits the running application through the runtime workflow.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Open XStudio</h2>
+          <p>XStudio is the runtime editor for Xpell 2 Developer Preview. Use it to describe changes, inspect runtime artifacts, edit view JSON, and save accepted mutations.</p>
+        </div>
+        <article class="card workflow-card" aria-label="XStudio workflow">
+          <div class="demo-flow">
+            <span>Prompt</span>
+            <span>Preview mutation</span>
+            <span>Apply</span>
+            <span>Save View</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Make your first runtime mutation</h2>
+          <p>Use a small app request so you can focus on the runtime loop first.</p>
+        </div>
+        <div class="demo-layout">
+          <article class="card command-card">
+            <h3>First prompt</h3>
+            <pre class="command-block"><code>Create a todo app with priorities and a small statistics panel.</code></pre>
+            <p>The goal is not to regenerate a full project. The goal is to update the runtime artifacts the application is already interpreting.</p>
+          </article>
+          <ol class="flow-list">
+            <li><strong>Type</strong><span>Type the prompt in XStudio.</span></li>
+            <li><strong>Go</strong><span>Click Go.</span></li>
+            <li><strong>Review</strong><span>Review the generated mutation.</span></li>
+            <li><strong>Apply</strong><span>Apply the change.</span></li>
+            <li><strong>Save</strong><span>Save the view.</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>What changes when you save?</h2>
+          <p>Xpell saves accepted runtime artifacts, such as views, flows, entities, and generated modules. These artifacts are interpreted by the runtime instead of requiring a full source-code regeneration loop.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Generated modules</h2>
+          <p>Some prompts require behavior, not only UI. In those cases Xpell may generate a module that can be inspected, edited, disabled, deleted, or regenerated.</p>
+        </div>
+        <article class="card preview-note">
+          <h3>Developer Preview note</h3>
+          <p>Generated modules are available in the Developer Preview, but module repair and advanced runtime-aware planning are still experimental.</p>
+        </article>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Troubleshooting</h2>
+          <p>Use the starter logs and XStudio runtime state as the first places to inspect local setup issues.</p>
+        </div>
+        <div class="troubleshooting-grid">
+          <article class="card">
+            <h3>AI key missing</h3>
+            <p>Check your local <code>.env</code> file and restart the dev server.</p>
+          </article>
+          <article class="card">
+            <h3>App did not update</h3>
+            <p>Refresh runtime state from XStudio, then retry the prompt.</p>
+          </article>
+          <article class="card">
+            <h3>Save View did not persist</h3>
+            <p>Confirm the starter app is running with file-write permissions and check the dev server logs.</p>
+          </article>
+          <article class="card">
+            <h3>Generated module failed</h3>
+            <p>Open the generated module source, inspect the error, and retry with a smaller prompt.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Next steps</h2>
+          <p>After the starter workflow is running locally, use the examples and source links for deeper inspection.</p>
+        </div>
+        <div class="entry-grid">
+          <a class="card entry-card" href="../examples/" data-analytics="example" data-item="examples-index">
+            <h3>Examples</h3>
+            <p>Explore focused runtime examples after the starter is running.</p>
+            <code>/examples/</code>
+          </a>
+          <a class="card entry-card" href="../index.html#videos" data-analytics="example" data-item="videos-getting-started">
+            <h3>Videos</h3>
+            <p>Watch published walkthroughs for runtime editing and live mutation.</p>
+            <code>#videos</code>
+          </a>
+          <a class="card entry-card" href="https://github.com/xpell-ai/xpell-vibe-starter" target="_blank" rel="noreferrer" data-analytics="download" data-item="starter-repo-next">
+            <h3>Starter repo</h3>
+            <p>Clone the Developer Preview starter and keep it as the local editing surface.</p>
+            <code>github.com/xpell-ai/xpell-vibe-starter</code>
+          </a>
+          <a class="card entry-card" href="https://github.com/xpell-ai" target="_blank" rel="noreferrer" data-analytics="download" data-item="github-next">
+            <h3>GitHub</h3>
+            <p>Inspect the Xpell source and related runtime projects.</p>
+            <code>github.com/xpell-ai</code>
+          </a>
+        </div>
       </section>
     </main>
 
-    <section class="section">
-      <h2 class="section-title">Install (Alpha)</h2>
-      <p class="section-subtitle">The <code>@alpha</code> tag opts into current pre-release contracts.</p>
-      <pre class="code-block">npm i @xpell/core@alpha
-npm i @xpell/ui@alpha
-npm i @xpell/3d@alpha
-npm i @xpell/node@alpha</pre>
-    </section>
-
-    <section class="section">
-      <h2 class="section-title">Hello UI (browser)</h2>
-      <p class="section-subtitle">Based on the existing examples bootstrap pattern with scoped imports.</p>
-      <pre class="code-block">import { Xpell as _x, XUI, XData as _xd } from "@xpell/ui";
-
-_x.verbose = true;
-_x.start();
-_x.loadModule(XUI);
-
-// Continue from the Tic-Tac-Toe example flow:
-// /examples/ttt.html</pre>
-      <div class="section-links">
-        <a class="btn btn-ghost" href="../examples/ttt.html" data-analytics="example" data-item="ttt-overview">Open UI example</a>
-        <a class="btn btn-ghost" href="../examples/ttt-live.html" data-analytics="example" data-item="ttt-live">Open live demo</a>
+    <footer class="site-footer">
+      <div>Xpell</div>
+      <div class="site-footer-links">
+        <a href="https://github.com/xpell-ai" target="_blank" rel="noreferrer" data-analytics="download" data-item="github">GitHub</a>
+        <a href="index.html">Docs</a>
+        <a href="https://aimeverse.com" target="_blank" rel="noreferrer">Aime Technologies</a>
       </div>
-    </section>
-
-    <section class="section">
-      <h2 class="section-title">Hello Server (xnode) + Wormholes (conceptual)</h2>
-      <p class="section-subtitle">Preview: end-to-end server + ping op flow is being consolidated into the Full App example.</p>
-      <pre class="code-block">1) Start xnode server process (preview setup)
-2) Expose a ping op in a module
-3) Call from client via Wormholes
-   wormholes.send("App:/ping")
-4) Verify response payload in client log</pre>
-      <div class="section-links">
-        <a class="btn btn-ghost" href="../examples/full-app.html" data-analytics="example" data-item="full-app-overview">Open Full App example</a>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2 class="section-title">Next steps</h2>
-      <div class="section-links">
-        <a class="btn btn-ghost" href="../examples/" data-analytics="example" data-item="examples-index">Examples</a>
-        <a class="btn btn-ghost" href="../xpell-2-alpha/">Xpell 2 Alpha</a>
-        <a class="btn btn-ghost" href="../codex/">Codex Skills</a>
-      </div>
-    </section>
-
-    <footer>
-      <div>© 2026 Aime Technologies Ltd. · Xpell.ai</div>
     </footer>
   </div>
   <script src="../assets/analytics.js"></script>

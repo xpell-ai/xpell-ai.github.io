@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Real-time Vibe Coding | Xpell 2 Beta</title>
-  <meta name="description" content="Xpell 2 Beta is an AI-native runtime for real-time vibe coding: modify your app while it runs, avoid rebuild loops, and spend fewer tokens." />
+  <title>Xpell 2 - Build Apps While They Run</title>
+  <meta name="description" content="Xpell 2 is a real-time AI-native application runtime that lets you modify apps while they run - no rebuild loops, no refresh loops, less wasted AI generation." />
   <link rel="canonical" href="https://xpell.ai/" />
   <link rel="stylesheet" href="assets/css/home.css" />
   <script type="application/ld+json">
@@ -16,9 +16,9 @@
   "alternateName": "Xpell 2",
   "url": "https://xpell.ai",
   "image": "https://xpell.ai/icon-512.png",
-  "description": "Xpell 2 is an AI-native runtime for modifying applications in real time without rebuild loops.",
+  "description": "Xpell 2 is a real-time AI-native application runtime for modifying applications while they run without rebuild loops.",
   "applicationCategory": "DeveloperApplication",
-  "softwareVersion": "2.0.0-beta",
+  "softwareVersion": "2.0.0-developer-preview",
   "operatingSystem": "Any",
   "author": {
     "@type": "Organization",
@@ -62,11 +62,11 @@
     <header class="site-nav">
       <div class="site-brand">
         <div class="site-brand-mark">
-          <img src="https://avatars.githubusercontent.com/u/245213194?s=200&v=4" alt="Xpell.ai logo" />
+          <img src="https://avatars.githubusercontent.com/u/245213194?s=200&amp;v=4" alt="Xpell.ai logo" />
         </div>
         <div class="site-brand-copy">
           <strong>Xpell</strong>
-          <span>Xpell 2 Beta launch site</span>
+          <span>Xpell 2 Developer Preview</span>
         </div>
       </div>
       <nav class="site-nav-links">
@@ -82,63 +82,105 @@
       <section class="hero">
         <div class="hero-wrap">
           <div class="eyebrow">
-            <span class="eyebrow-dot"></span>
-            <span>Xpell 2 Beta</span>
+            <span class="eyebrow-dot" aria-hidden="true">&#8203;</span>
+            <span>Xpell 2 Developer Preview</span>
           </div>
-          <h1>Real-time Vibe Coding — No rebuild. No wasted tokens.</h1>
-          <p>Xpell 2 is an AI-native runtime that lets you modify your app while it's running. Generate, preview, and apply changes instantly — without recompiling your code.</p>
-          <p class="hero-sub">Build dashboards, internal tools, and AI interfaces in minutes — without rebuild loops or full code generation.</p>
+          <h1>Build apps while they run.</h1>
+          <p>Xpell 2 is an AI-native runtime that lets you modify applications in real time without rebuild loops, refresh loops, or wasted generation cycles.</p>
+          <p class="hero-sub">Real-time vibe coding becomes the workflow, not the pitch: prompt the running app, preview the mutation, and keep moving without throwing away state.</p>
+          <p class="hero-sub">
+            
+            <p>Traditional AI: Prompt → Generate → Build → Refresh</p>
+
+            <p>Xpell: Prompt → Live Runtime Mutation</p>
+          </p>
+          
           <div class="hero-actions">
-            <a class="btn btn-primary" href="https://github.com/xpell-ai/xpell-vibe-starter" target="_blank" rel="noreferrer" data-analytics="download" data-item="vibe-starter">Get Started in 2 Minutes</a>
-            <a class="btn btn-secondary" href="#demo" data-analytics="example" data-item="hero-live-demo">See it in action</a>
+            <!-- TODO: Replace with the live demo URL when the public demo is available. -->
+            <a class="btn btn-primary" href="#" data-analytics="example" data-item="hero-live-demo">Try the Live Demo</a>
+            <!-- TODO: Replace with the 60s demo URL when the launch video is available. -->
+            <a class="btn btn-secondary" href="#" data-analytics="example" data-item="hero-60s-demo">Watch 60s Demo</a>
           </div>
-          <div class="hero-note">Modify your app live. Preview changes instantly. Save only what you accept.</div>
+          <div class="hero-note">No rebuild loop. No refresh loop. Less wasted AI tokens.</div>
         </div>
 
-        <div class="launch-panel" style="grid-template-columns: minmax(0, 1fr);">
-          <article class="panel-card">
-            <h2>Xpell 2 Beta</h2>
-            <p>Run the app, prompt the runtime, preview the result, then persist the change. No rebuild loop required.</p>
-            <div class="alpha-grid">
-              <div class="alpha-node">
-                <strong>Prompt</strong>
-                <span>Describe the change you want in the running system.</span>
+        <div class="launch-panel demo-placeholder-panel" id="launch-demo">
+          <article class="panel-card demo-placeholder-card">
+            <div class="demo-placeholder-label">60s launch demo</div>
+            <h2>Watch Xpell mutate a running application without reloads, rebuilds, or losing state.</h2>
+            <div class="demo-flow">
+              <span>Create Todo App</span>
+              <span>Add priorities</span>
+              <span>Add statistics panel</span>
+              <span>Change theme</span>
+              <span>App updates live</span>
+            </div>
+            <!-- TODO: Replace this card with the final 60s launch demo video/GIF. -->
+            <div class="demo-screen" aria-label="Demo placeholder showing a running todo app updated live">
+              <div class="demo-screen-top">
+                <span aria-hidden="true">&#8203;</span>
+                <span aria-hidden="true">&#8203;</span>
+                <span aria-hidden="true">&#8203;</span>
               </div>
-              <div class="alpha-node">
-                <strong>Preview</strong>
-                <span>Inspect the generated UI or behavior before saving it.</span>
-              </div>
-              <div class="alpha-node">
-                <strong>Apply</strong>
-                <span>Accept the runtime change without recompiling the app.</span>
-              </div>
-              <div class="alpha-node">
-                <strong>Persist</strong>
-                <span>Save the accepted structure back into the project.</span>
+              <div class="demo-screen-body">
+                <div class="demo-app-preview">
+                  <strong>Todo App</strong>
+                  <div class="demo-task high">Ship launch page <small>High</small></div>
+                  <div class="demo-task medium">Record 60s demo <small>Medium</small></div>
+                  <div class="demo-task low">Tune theme <small>Low</small></div>
+                </div>
+                <div class="demo-stats-preview">
+                  <strong>Live stats</strong>
+                  <span>3 active tasks</span>
+                  <span>2 priority edits</span>
+                  <span>Theme updated</span>
+                </div>
               </div>
             </div>
           </article>
         </div>
+
+        <article class="card preview-card">
+          <div>
+            <h2>Developer Preview</h2>
+            <p>Clear, honest status for the current launch build.</p>
+          </div>
+          <div class="preview-columns">
+            <div>
+              <h3>Working now</h3>
+              <ul>
+                <li>Runtime views</li>
+                <li>Live updates</li>
+                <li>XStudio editing</li>
+                <li>Manual JSON/runtime artifact editing</li>
+                <li>Generated modules</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Experimental</h3>
+              <ul>
+                <li>Module repair</li>
+                <li>Runtime-aware planning</li>
+                <li>Advanced AI orchestration</li>
+              </ul>
+            </div>
+          </div>
+        </article>
       </section>
     </main>
 
     <section class="section">
       <div class="section-header">
-        <h2>2-Minute Start</h2>
-        <p>Start from the runtime starter, boot the local app, then modify it while it runs.</p>
+        <h2>Why Xpell Exists</h2>
+        <p>Traditional software often requires development, review, staging, QA, and deployment just to see simple UI changes.</p>
       </div>
-      <div class="start-grid">
-        <article class="card command-card">
-          <h3>Install and run</h3>
-          <pre class="command-block"><code>git clone https://github.com/xpell-ai/xpell-vibe-starter
-pnpm install
-pnpm dev</code></pre>
-        </article>
-        <article class="card command-card">
-          <h3>What happens next</h3>
-          <p>Open IntelliSphere (the in-app AI editor) → type → UI changes instantly.</p>
-          <p class="card-status">Starter repo: <a href="https://github.com/xpell-ai/xpell-vibe-starter" target="_blank" rel="noreferrer" data-analytics="download" data-item="vibe-starter-inline">xpell-ai/xpell-vibe-starter</a></p>
-        </article>
+      <div class="founder-story card">
+        <p>As a developer, CTO, and engineering manager, I kept seeing small interface changes turn into expensive delivery cycles.</p>
+        <p>Days or weeks of work just to see a button move, a form change, or a panel appear.</p>
+        <p>Xpell started from a simple question:</p>
+        <blockquote>What if applications could be edited as easily as WordPress pages?</blockquote>
+        <p>The original idea was "WordPress for applications": live, editable software that can change while it runs.</p>
+        <p>AI transformed that idea into Xpell 2 - an AI-native runtime for evolving applications in real time.</p>
       </div>
     </section>
 
@@ -146,7 +188,7 @@ pnpm dev</code></pre>
       <div class="section-header">
         <h2>Modify your app live</h2>
         <p>Xpell keeps the app running while changes are generated, previewed, and applied in real time.</p>
-        <p class="demo-intro">Watch how a running app is modified live — no rebuild, no reload.</p>
+        <p class="demo-intro">Real-time vibe coding works because the runtime can accept targeted mutations instead of regenerating the whole app.</p>
       </div>
       <div class="demo-video" style="margin-bottom: 18px; overflow: hidden; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface);">
         <iframe
@@ -163,12 +205,12 @@ pnpm dev</code></pre>
       </div>
       <div class="demo-layout">
         <div>
-          <h3>Using IntelliSphere</h3>
-          <p>IntelliSphere is the in-app AI editor that lets you edit the running system in real time. Type a prompt, preview the result, and apply changes instantly.</p>
+          <h3>Using XStudio</h3>
+          <p>XStudio is the in-app AI editor for the Developer Preview. Type a prompt, preview the result, and apply the mutation while the app keeps running.</p>
           <ol class="flow-list">
             <li><strong>Run</strong><span>Start the app and keep the runtime active.</span></li>
             <li><strong>Prompt</strong><span>Describe the change you want in plain language.</span></li>
-            <li><strong>UI update</strong><span>Preview the generated interface update immediately.</span></li>
+            <li><strong>Live mutation</strong><span>Preview the generated interface update immediately.</span></li>
             <li><strong>Apply</strong><span>Accept the change when the runtime output is correct.</span></li>
             <li><strong>Saved</strong><span>Persist the accepted structure back into the project.</span></li>
           </ol>
@@ -176,8 +218,82 @@ pnpm dev</code></pre>
         <article class="card demo-card">
           <h3>Example prompt</h3>
           <pre class="command-block"><code>Add email field to users</code></pre>
-          <p class="demo-cta">Try this in the starter app → <a href="https://github.com/xpell-ai/xpell-vibe-starter" target="_blank" rel="noreferrer">xpell-vibe-starter</a></p>
-          <p>Use the running system as the editing surface instead of regenerating a full application snapshot.</p>
+          <p class="demo-cta">Try this in the starter app -> <a href="https://github.com/xpell-ai/xpell-vibe-starter" target="_blank" rel="noreferrer">xpell-vibe-starter</a></p>
+          <p>Use the running system as the editing surface instead of regenerating a full source-code project.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Stop regenerating apps. Start evolving them.</h2>
+        <p>The old loop makes you wait for generated code, builds, and refreshes. Xpell turns prompts into runtime changes.</p>
+      </div>
+      <div class="loop-compare">
+        <article class="card loop-card">
+          <h3>Traditional AI builders</h3>
+          <div class="loop-flow">
+            <span>Prompt</span>
+            <span>Generate Code</span>
+            <span>Build</span>
+            <span>Refresh</span>
+          </div>
+          <p>The app usually has to be regenerated, rebuilt, and reloaded before you can judge the change.</p>
+        </article>
+        <article class="card loop-card xpell-loop-card">
+          <h3>Xpell</h3>
+          <div class="loop-flow">
+            <span>Prompt</span>
+            <span>Runtime Artifact</span>
+            <span>Live Mutation</span>
+          </div>
+          <p>The running app receives a targeted mutation, so state can stay intact while the UI evolves.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Runtime artifacts</h2>
+        <p>Xpell treats applications as runtime artifacts the app is already interpreting.</p>
+      </div>
+      <div class="artifact-grid">
+        <article class="card">
+          <h3>Views</h3>
+          <p>The screens and UI surfaces users see.</p>
+        </article>
+        <article class="card">
+          <h3>Flows</h3>
+          <p>The steps and interactions inside the app.</p>
+        </article>
+        <article class="card">
+          <h3>Entities</h3>
+          <p>The structured objects the application works with.</p>
+        </article>
+        <article class="card">
+          <h3>Modules</h3>
+          <p>The capabilities connected to the runtime.</p>
+        </article>
+      </div>
+      <p class="artifact-note">Instead of regenerating full source-code projects, Xpell updates the runtime artifacts the application is already interpreting. AI helps request the mutation; the runtime interprets and applies it.</p>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>2-Minute Start</h2>
+        <p>Start from the runtime starter, boot the local app, then modify it while it runs.</p>
+      </div>
+      <div class="start-grid">
+        <article class="card command-card">
+          <h3>Install and run</h3>
+          <pre class="command-block"><code>git clone https://github.com/xpell-ai/xpell-vibe-starter
+pnpm install
+pnpm dev</code></pre>
+        </article>
+        <article class="card command-card">
+          <h3>What happens next</h3>
+          <p>Open XStudio (CTRL+E / CMD+E / WIN+E), describe a change, and watch the running app update without leaving its current state.</p>
+          <p class="card-status">Starter repo: <a href="https://github.com/xpell-ai/xpell-vibe-starter" target="_blank" rel="noreferrer" data-analytics="download" data-item="vibe-starter-inline">xpell-ai/xpell-vibe-starter</a></p>
         </article>
       </div>
     </section>
@@ -207,73 +323,13 @@ pnpm dev</code></pre>
 
     <section class="section">
       <div class="section-header">
-        <h2>Stop regenerating apps. Start evolving them.</h2>
-        <p>Xpell treats AI as part of a running interpreter instead of a one-shot generator.</p>
-      </div>
-      <div class="comparison-card">
-        <table class="comparison-table">
-          <thead>
-            <tr>
-              <th>Traditional AI builders</th>
-              <th>Xpell</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Regenerate full app output after each prompt.</td>
-              <td>Modify the running app directly.</td>
-            </tr>
-            <tr>
-              <td>Rebuild or redeploy to inspect every change.</td>
-              <td>Preview changes without rebuild loops.</td>
-            </tr>
-            <tr>
-              <td>Spend tokens repeating unchanged structure.</td>
-              <td>Spend tokens on the delta you actually need.</td>
-            </tr>
-            <tr>
-              <td>Prompt output sits outside runtime state.</td>
-              <td>Prompt output becomes part of runtime state and can be persisted.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-header">
-        <h2>Architecture</h2>
-        <p>Xpell is a real-time interpreter, not a framework.</p>
-      </div>
-      <div class="architecture-grid">
-        <article class="card">
-          <h3>@xpell/core</h3>
-          <p>Runtime engine primitives, state, events, and deterministic contracts.</p>
-        </article>
-        <article class="card">
-          <h3>@xpell/node</h3>
-          <p>xnode runtime for server execution, modules, and runtime operations.</p>
-        </article>
-        <article class="card">
-          <h3>@xpell/ui</h3>
-          <p>Runtime-driven UI layer that updates while the app is running.</p>
-        </article>
-        <article class="card">
-          <h3>@xpell/3d</h3>
-          <p>3D runtime layer using the same interpreter model for spatial apps.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-header">
         <h2>AI that edits your app while it runs</h2>
         <p>Prompt -> runtime -> persist. Generate the change, preview it in the running app, then save the accepted result into the project.</p>
       </div>
       <div class="entry-grid">
         <a class="card entry-card" href="getting-started/">
           <h3>Getting Started</h3>
-          <p>Move from the quick starter into the step-by-step Xpell 2 Beta flow.</p>
+          <p>Move from the quick starter into the step-by-step Xpell 2 Developer Preview flow.</p>
           <code>/getting-started/</code>
         </a>
         <a class="card entry-card" href="examples/" data-analytics="example" data-item="examples-home">

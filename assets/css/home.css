@@ -243,6 +243,181 @@ a {
   line-height: 1.5;
 }
 
+.demo-placeholder-panel {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.demo-placeholder-card {
+  display: grid;
+  gap: 18px;
+  overflow: hidden;
+}
+
+.demo-placeholder-card h2 {
+  max-width: 760px;
+  font-size: clamp(24px, 4vw, 38px);
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+}
+
+.demo-placeholder-label {
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.demo-flow,
+.loop-flow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.demo-flow span,
+.loop-flow span {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 9px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-soft);
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.demo-flow span:not(:last-child)::after,
+.loop-flow span:not(:last-child)::after {
+  content: "->";
+  position: absolute;
+  right: -19px;
+  color: var(--accent);
+  font-size: 13px;
+}
+
+.demo-flow span:not(:last-child),
+.loop-flow span:not(:last-child) {
+  margin-right: 16px;
+}
+
+.demo-screen {
+  border: 1px solid rgba(106, 169, 255, 0.26);
+  border-radius: var(--radius);
+  background: #0f141b;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.demo-screen-top {
+  display: flex;
+  gap: 7px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.demo-screen-top span {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.demo-screen-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(240px, 0.8fr);
+  gap: 16px;
+  padding: 18px;
+}
+
+.demo-app-preview,
+.demo-stats-preview {
+  display: grid;
+  gap: 10px;
+  min-height: 220px;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.demo-app-preview strong,
+.demo-stats-preview strong {
+  font-size: 18px;
+}
+
+.demo-task {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: var(--surface-soft);
+  color: var(--text);
+}
+
+.demo-task small {
+  color: var(--muted);
+}
+
+.demo-task.high {
+  border-left: 3px solid #ff7a7a;
+}
+
+.demo-task.medium {
+  border-left: 3px solid #ffd166;
+}
+
+.demo-task.low {
+  border-left: 3px solid #65d49b;
+}
+
+.demo-stats-preview span {
+  display: flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 14px;
+  border-radius: 12px;
+  background: rgba(106, 169, 255, 0.1);
+  color: #d8e5ff;
+}
+
+.preview-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 20px;
+  margin-top: 18px;
+  border-color: rgba(106, 169, 255, 0.24);
+}
+
+.preview-card h2,
+.preview-card h3,
+.preview-card p {
+  margin: 0;
+}
+
+.preview-card h2 {
+  font-size: 22px;
+}
+
+.preview-card p {
+  margin-top: 8px;
+}
+
+.preview-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.preview-columns ul {
+  margin: 10px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
 .section {
   padding: 30px 0 0;
 }
@@ -313,6 +488,55 @@ a {
 
 .command-card {
   min-height: 100%;
+}
+
+.setup-steps,
+.troubleshooting-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.setup-steps {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.troubleshooting-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.setup-video-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.setup-video-card iframe {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
+}
+
+.setup-video-card .card-status {
+  margin: 14px 20px 18px;
+}
+
+.workflow-card {
+  overflow: hidden;
+}
+
+.preview-note {
+  max-width: 760px;
+  border-color: rgba(106, 169, 255, 0.26);
+}
+
+.getting-started-page .command-card p {
+  margin-top: 14px;
+}
+
+.getting-started-page code {
+  color: #d8e5ff;
 }
 
 .command-block {
@@ -405,6 +629,66 @@ a {
 
 .comparison-table tbody tr:last-child td {
   border-bottom: 0;
+}
+
+.loop-compare,
+.artifact-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.loop-compare {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.loop-card {
+  display: grid;
+  align-content: start;
+  gap: 18px;
+}
+
+.loop-card h3,
+.loop-card p {
+  margin: 0;
+}
+
+.xpell-loop-card {
+  border-color: rgba(106, 169, 255, 0.38);
+  background: linear-gradient(180deg, rgba(106, 169, 255, 0.1), var(--surface));
+}
+
+.founder-story {
+  max-width: 100%;
+}
+
+.founder-story p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.founder-story p + p {
+  margin-top: 16px;
+}
+
+.founder-story blockquote {
+  margin: 18px 0;
+  padding-left: 18px;
+  border-left: 3px solid var(--accent);
+  font-size: clamp(22px, 3vw, 34px);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.artifact-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.artifact-note {
+  max-width: 760px;
+  margin: 18px 0 0;
+  color: var(--muted);
+  line-height: 1.65;
 }
 
 .why-list {
@@ -524,14 +808,24 @@ a {
   .entry-grid,
   .video-grid,
   .start-grid,
+  .setup-steps,
+  .troubleshooting-grid,
   .architecture-grid,
   .demo-layout,
+  .demo-screen-body,
+  .loop-compare,
+  .artifact-grid,
+  .preview-card,
   .why-list,
   .agent-card {
     grid-template-columns: minmax(0, 1fr);
   }
 
   .alpha-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .preview-columns {
     grid-template-columns: minmax(0, 1fr);
   }
 }
@@ -562,6 +856,30 @@ a {
   .flow-list li {
     grid-template-columns: minmax(0, 1fr);
     gap: 8px;
+  }
+
+  .demo-flow,
+  .loop-flow {
+    display: grid;
+    gap: 12px;
+  }
+
+  .demo-flow span,
+  .loop-flow span {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .demo-flow span:not(:last-child),
+  .loop-flow span:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+
+  .demo-flow span:not(:last-child)::after,
+  .loop-flow span:not(:last-child)::after {
+    right: auto;
+    bottom: -22px;
   }
 
   .site-footer {
